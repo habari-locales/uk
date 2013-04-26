@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: Habari\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-24 00:00+0000\n"
-"PO-Revision-Date: 2013-03-24 08:45+0000\n"
+"POT-Creation-Date: 2013-04-21 00:00+0000\n"
+"PO-Revision-Date: 2013-04-14 08:43+0000\n"
 "Last-Translator: Matt Read <matt@mattread.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,24 +18,24 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: classes/vocabulary.php:224
+#: classes/vocabulary.php:227
 #, php-format
 msgid "New vocabulary %1$s (%2$s)"
 msgstr ""
 
-#: classes/vocabulary.php:299
+#: classes/vocabulary.php:302
 #, php-format
 msgid "Vocabulary %1$s (%2$s) deleted."
 msgstr "Словник %1$s (%2$s) видалино."
 
-#: classes/vocabulary.php:844
+#: classes/vocabulary.php:863
 #, php-format
 msgid ""
 "Not all posts tagged \"%1$s\" could be reassigned to \"%2$s\". They have "
 "been left alone."
 msgstr ""
 
-#: classes/vocabulary.php:850
+#: classes/vocabulary.php:869
 #, php-format
 msgid "Term %1$s in the %2$s vocabulary has been renamed to %3$s."
 msgid_plural "Terms %1$s in the %2$s vocabulary have been renamed to %3$s."
@@ -43,7 +43,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: classes/url.php:221
+#: classes/url.php:222
 #, php-format
 msgid ""
 "Could not find a rule matching the following names: %s. File: %s (line %s)"
@@ -58,7 +58,7 @@ msgstr ""
 msgid "There was an error trimming old entries from the EventLog!"
 msgstr ""
 
-#: classes/eventlog.php:386 handlers/adminlogshandler.php:269
+#: classes/eventlog.php:386 handlers/adminlogshandler.php:159
 msgid "Logs purged."
 msgstr ""
 
@@ -67,44 +67,44 @@ msgstr ""
 msgid "Plugin file \"%s\" has changed its plugin class name."
 msgstr ""
 
-#: classes/plugins.php:296
+#: classes/plugins.php:295
 #, php-format
 msgid "An empty plugin definition pointing to file \"%1$s\" was removed."
 msgstr ""
 
-#: classes/plugins.php:307
+#: classes/plugins.php:306
 #, php-format
 msgid "Plugin \"%1$s\" deactivated because it could no longer be found."
 msgstr ""
 
-#: classes/plugins.php:479
+#: classes/plugins.php:482
 #, php-format
 msgid "Invalid plugin XML file: %1$s"
 msgstr ""
 
-#: classes/plugins.php:503
+#: classes/plugins.php:506
 #, php-format
 msgid "The class \"%s\" is not a Plugin, but was queued to load as a plugin."
 msgstr ""
 
-#: classes/plugins.php:504
+#: classes/plugins.php:507
 #, php-format
 msgid ""
 "The class \"%s\" is not a Plugin, but was queued to load as a plugin. It may"
 " not currently be active."
 msgstr ""
 
-#: classes/plugins.php:594
+#: classes/plugins.php:627
 #, php-format
 msgid "Activated Plugin: %s"
 msgstr ""
 
-#: classes/plugins.php:633
+#: classes/plugins.php:666
 #, php-format
 msgid "Deactivated Plugin: %s"
 msgstr ""
 
-#: classes/plugins.php:740
+#: classes/plugins.php:773
 #, php-format
 msgid ""
 "Attempted to load the plugin file \"%s\", but it failed with syntax errors. "
@@ -218,6 +218,11 @@ msgstr ""
 
 #: classes/xmlrpcexception.php:79
 msgid "Unknown XMLRPC Exception"
+msgstr ""
+
+#: classes/formcontrol.php:90
+#, php-format
+msgid "The FormControl type \"%s\" is invalid."
 msgstr ""
 
 #. @locale Habari tried to create a Bitmask with the wrong arguments
@@ -472,7 +477,7 @@ msgstr ""
 msgid "PM"
 msgstr ""
 
-#: classes/datetime.php:487 admin/dashboard.php:12
+#: classes/datetime.php:487 admin/dashboard.php:11
 msgid "year"
 msgid_plural "years"
 msgstr[0] ""
@@ -631,12 +636,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: classes/term.php:153
+#: classes/term.php:157
 #, php-format
 msgid "New term %1$s: %2$s"
 msgstr ""
 
-#: classes/term.php:213
+#: classes/term.php:217
 #, php-format
 msgid "Term %1$s (%2$s) deleted."
 msgstr ""
@@ -715,11 +720,11 @@ msgstr ""
 msgid "Invalid XML response."
 msgstr ""
 
-#: classes/remoterequest.php:30 classes/curlrequestprocessor.php:188
+#: classes/remoterequest.php:30 classes/curlrequestprocessor.php:194
 msgid "Unable to get response body. Request did not yet execute."
 msgstr ""
 
-#: classes/remoterequest.php:39 classes/curlrequestprocessor.php:197
+#: classes/remoterequest.php:39 classes/curlrequestprocessor.php:203
 msgid "Unable to get response headers. Request did not yet execute."
 msgstr ""
 
@@ -740,7 +745,7 @@ msgstr ""
 msgid "Unable to fetch response body for a pending request."
 msgstr ""
 
-#: classes/comment.php:218 classes/user.php:85
+#: classes/comment.php:218 classes/user.php:86
 msgid "Anonymous"
 msgstr ""
 
@@ -801,7 +806,8 @@ msgstr ""
 
 #: classes/pluggable.php:285 plugins/undelete/undelete.plugin.php:170
 #: plugins/undelete/undelete.plugin.php:182
-#: plugins/flickrsilo/flickrsilo.plugin.php:829 admin/block_instances.php:17
+#: plugins/flickrsilo/flickrsilo.plugin.php:862
+#: plugins/habarisilo/habarisilo.plugin.php:65 admin/block_instances.php:17
 msgid "Configure"
 msgstr "Налаштування"
 
@@ -809,42 +815,47 @@ msgstr "Налаштування"
 msgid "Failed to register HiEngine stream protocol"
 msgstr ""
 
-#: classes/theme.php:270
+#: classes/theme.php:277
 msgid ""
 "Whoops! 404. The page you were trying to access is not really there. Please "
 "try again."
 msgstr ""
 
-#: classes/theme.php:687
+#: classes/theme.php:694
 #, php-format
 msgid ""
 "Content could not be displayed. One of the following templates - %s - has to"
 " be present in the active theme."
 msgstr ""
 
-#: classes/theme.php:845
+#: classes/theme.php:852
 msgid "Previous"
 msgstr ""
 
-#: classes/theme.php:872
+#: classes/theme.php:879
 msgid "Next"
 msgstr ""
 
-#: classes/theme.php:898
+#: classes/theme.php:905
 msgid "Read Comments"
 msgstr ""
 
-#: classes/theme.php:919 themes/charcoal/theme.php:161
+#: classes/theme.php:926 themes/charcoal/theme.php:152
 msgid "No Comments"
 msgstr "Жодних коментарів"
 
-#: classes/theme.php:924
+#: classes/theme.php:931
 #, php-format
 msgid "%s Comment"
 msgid_plural "%s Comments"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#: classes/theme.php:1355
+#, php-format
+msgid "Posts tagged with \"%s\""
+msgstr ""
 
 #: classes/databaseconnection.php:276
 msgid "Attempt to fetch in class mode with a non-included class"
@@ -916,19 +927,18 @@ msgstr ""
 #. of a plugin on the admin page (one, two, three *and* four).
 #. @locale The string used between the last two items in the list of authors
 #. of a theme on the admin page (one, two, three *and* four).
-#: classes/format.php:264 classes/format.php:300 admin/plugin.php:44
-#: admin/themes.php:17 admin/themes.php:126
+#: classes/format.php:264 classes/format.php:300 admin/plugin.php:38
+#: admin/themes.php:17 admin/themes.php:129
 msgid " and "
 msgstr ""
 
-#: classes/post.php:276 classes/acl.php:800
+#: classes/post.php:276 classes/acl.php:809 classes/acl.php:930
 #, php-format
 msgid "Permissions to posts of type \"%s\""
 msgstr ""
 
-#: classes/post.php:276 classes/post.php:977 classes/acl.php:796
-#: classes/acl.php:797 classes/acl.php:798 classes/acl.php:800
-#: handlers/installhandler.php:1739
+#: classes/post.php:276 classes/post.php:990 classes/post.php:1304
+#: classes/acl.php:947 handlers/installhandler.php:1735
 msgid "Content"
 msgstr ""
 
@@ -937,194 +947,234 @@ msgstr ""
 msgid "New post %1$s (%2$s);  Type: %3$s; Status: %4$s"
 msgstr ""
 
-#: classes/post.php:766
+#: classes/post.php:771
 #, php-format
 msgid "Post %1$s (%2$s) deleted."
 msgstr ""
 
-#: classes/post.php:799
+#: classes/post.php:804
 #, php-format
 msgid "Scheduled Post %1$s (%2$s) published at %3$s."
 msgstr ""
 
-#: classes/post.php:802
+#: classes/post.php:807
 #, php-format
 msgid "Post %1$s (%2$s) published."
 msgstr ""
 
-#: classes/post.php:956
+#: classes/post.php:975
 msgid "Preview Post"
 msgstr ""
 
-#: classes/post.php:956
+#: classes/post.php:975
 msgid "View Post"
 msgstr ""
 
-#: classes/post.php:961 classes/post.php:964
+#: classes/post.php:982
 msgid "Title"
 msgstr ""
 
-#: classes/post.php:985
+#: classes/post.php:997
 msgid "Tags, separated by, commas"
 msgstr ""
 
-#: classes/post.php:1005 handlers/admincommentshandler.php:75
-#: admin/themes.php:33
+#: classes/post.php:1026 handlers/admincommentshandler.php:60
+#: admin/themes.php:34
 msgid "Settings"
 msgstr "Налаштування"
 
-#: classes/post.php:1007
+#: classes/post.php:1028
 msgid "Content State"
 msgstr ""
 
-#: classes/post.php:1016
+#: classes/post.php:1035
 msgid "Minor Edit"
 msgstr ""
 
-#: classes/post.php:1021
+#: classes/post.php:1039
 msgid "Comments Allowed"
 msgstr ""
 
-#: classes/post.php:1024
+#: classes/post.php:1041
 msgid "Publication Time"
 msgstr ""
 
-#: classes/post.php:1026
-msgid "YYYY-MM-DD HH:MM:SS"
-msgstr ""
-
-#: classes/post.php:1031
+#: classes/post.php:1046
 msgid "Content Address"
 msgstr ""
 
-#: classes/post.php:1045 plugins/undelete/undelete.plugin.php:185
-#: plugins/flickrsilo/flickrsilo.plugin.php:902
-#: handlers/adminthemeshandler.php:156 themes/charcoal/theme.php:68
-#: admin/themes.php:91
+#: classes/post.php:1054 plugins/undelete/undelete.plugin.php:185
+#: plugins/flickrsilo/flickrsilo.plugin.php:943
+#: handlers/adminthemeshandler.php:161 themes/charcoal/theme.php:59
+#: admin/themes.php:93
 msgid "Save"
 msgstr "Зберегти"
 
-#: classes/post.php:1083 handlers/adminpostshandler.php:31
+#: classes/post.php:1085 handlers/adminpostshandler.php:31
 #: handlers/adminpostshandler.php:35
 msgid "You don't have permission to edit that post"
 msgstr ""
 
-#: classes/post.php:1090
+#: classes/post.php:1092
 msgid "Changing content types is not allowed"
 msgstr ""
 
-#: classes/post.php:1101
+#: classes/post.php:1103
 msgid "Creating that post type is denied"
 msgstr ""
 
-#: classes/post.php:1114
+#: classes/post.php:1116
 msgid "Editing that post type is denied"
 msgstr ""
 
-#: classes/post.php:1121
+#: classes/post.php:1123
 #, php-format
 msgid ""
 "The post %1$s was updated since you made changes.  Please review those "
 "changes before overwriting them."
 msgstr ""
 
-#: classes/post.php:1128
+#: classes/post.php:1130
 msgid "A post slug cannot be empty. Keeping old slug."
 msgstr ""
 
-#: classes/post.php:1188
-#, php-format
-msgid "The post %1$s has been saved as %2$s."
-msgstr ""
-
-#: classes/post.php:1231
-msgid "Comments are disabled site-wide."
+#: classes/post.php:1192
+msgid "The post !postname has been saved as !status."
 msgstr ""
 
 #: classes/post.php:1236
-msgid "Comments for this post are disabled."
+msgid "Comments are disabled site-wide."
 msgstr ""
 
 #: classes/post.php:1241
-msgid "Commenting on this site requires authentication."
+msgid "Comments for this post are disabled."
 msgstr ""
 
 #: classes/post.php:1246
+msgid "Commenting on this site requires authentication."
+msgstr ""
+
+#: classes/post.php:1251
 msgid "You do not have permission to comment on this site."
 msgstr ""
 
-#: classes/post.php:1259
+#: classes/post.php:1261
 msgid "Name <span class=\"required\">*Required</span>"
 msgstr ""
 
-#: classes/post.php:1261
+#: classes/post.php:1267
 msgid "The Name field value is required"
 msgstr ""
 
-#: classes/post.php:1271 handlers/adminusershandler.php:100
-msgid "Email"
-msgstr ""
-
-#: classes/post.php:1273 classes/post.php:1278
+#: classes/post.php:1277 classes/post.php:1280
 msgid "The Email field value must be a valid email address"
 msgstr ""
 
-#: classes/post.php:1279
+#: classes/post.php:1281
 msgid "Email <span class=\"required\">*Required</span>"
 msgstr ""
 
-#: classes/post.php:1288 themes/charcoal/theme.php:232
+#: classes/post.php:1284 handlers/adminusershandler.php:101
+msgid "Email"
+msgstr ""
+
+#: classes/post.php:1290 themes/charcoal/theme.php:223
 msgid "Website"
 msgstr "Веб-сторінка"
 
-#: classes/post.php:1290
+#: classes/post.php:1293
 msgid "The Website field value must be a valid URL"
 msgstr ""
-
-#: classes/post.php:1301 handlers/admincommentshandler.php:51
-#: themes/mzingi/commentform.php:29
-msgid "Comment"
-msgid_plural "Comments"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
 
 #: classes/post.php:1303
 msgid "The Comment field value is required"
 msgstr ""
 
-#: classes/post.php:1309 plugins/coredashmodules/coredashmodules.plugin.php:93
-#: plugins/habarisilo/habarisilo.plugin.php:471 themes/mzingi/theme.php:115
-#: themes/charcoal/theme.php:235
+#: classes/post.php:1310 plugins/coredashmodules/coredashmodules.plugin.php:95
+#: plugins/habarisilo/habarisilo.plugin.php:525 themes/mzingi/theme.php:115
+#: themes/charcoal/theme.php:226
 msgid "Submit"
 msgstr "Надіслати"
 
-#: classes/post.php:1709
+#: classes/post.php:1710
 msgid "Entry"
 msgstr ""
 
-#: classes/post.php:1710
+#: classes/post.php:1711
 msgid "Entries"
 msgstr ""
 
-#: classes/post.php:1713
+#: classes/post.php:1714
 msgid "Page"
 msgstr ""
 
-#: classes/post.php:1714
+#: classes/post.php:1715
 msgid "Pages"
 msgstr ""
 
-#: classes/post.php:1729
+#: classes/post.php:1730
 msgid "draft"
 msgstr ""
 
-#: classes/post.php:1730
+#: classes/post.php:1731
 msgid "published"
 msgstr ""
 
-#: classes/post.php:1731
+#: classes/post.php:1732
 msgid "scheduled"
+msgstr ""
+
+#: classes/formvalidators.php:42
+msgid "Relative urls are not allowed"
+msgstr ""
+
+#: classes/formvalidators.php:48
+#, php-format
+msgid "Only %s urls are allowed"
+msgstr ""
+
+#: classes/formvalidators.php:69
+#, php-format
+msgid "Value for %s must be a valid Email Address."
+msgstr ""
+
+#: classes/formvalidators.php:88
+#, php-format
+msgid "A value for the %s field is required."
+msgstr ""
+
+#: classes/formvalidators.php:110
+#, php-format
+msgid "That username supplied for %s is already in use."
+msgstr ""
+
+#: classes/formvalidators.php:132
+#, php-format
+msgid "The group %s already exists."
+msgstr ""
+
+#: classes/formvalidators.php:152
+#, php-format
+msgid "The value of the %1$s field must match the value of %2$s."
+msgstr ""
+
+#: classes/formvalidators.php:175
+#, php-format
+msgid "The value for %s does not meet submission requirements"
+msgstr ""
+
+#: classes/formvalidators.php:196
+#, php-format
+msgid "The value entered for %s is lesser than the minimum of %d."
+msgstr ""
+
+#: classes/formvalidators.php:202
+#, php-format
+msgid "The value entered for %s is greater than the maximum of %d."
+msgstr ""
+
+#: classes/formvalidators.php:223
+msgid "This form must be submitted directly."
 msgstr ""
 
 #: classes/db.php:71
@@ -1133,74 +1183,74 @@ msgid ""
 "string specified. Please check config.php"
 msgstr ""
 
-#: classes/user.php:173
+#: classes/user.php:174
 #, php-format
 msgid "New user created: %s"
 msgstr ""
 
-#: classes/user.php:215
+#: classes/user.php:216
 #, php-format
 msgid "User deleted: %s"
 msgstr ""
 
-#: classes/user.php:293 classes/user.php:322
+#: classes/user.php:294 classes/user.php:323
 #, php-format
 msgid "Successful login for %s"
 msgstr ""
 
-#: classes/user.php:300
+#: classes/user.php:301
 #, php-format
 msgid "Login attempt (via authentication plugin) for non-existent user %s"
 msgstr ""
 
-#: classes/user.php:301 classes/user.php:313 classes/user.php:331
+#: classes/user.php:302 classes/user.php:314 classes/user.php:332
 msgid "Invalid username/password"
 msgstr ""
 
-#: classes/user.php:312
+#: classes/user.php:313
 #, php-format
 msgid "Login attempt for non-existent user %s"
 msgstr ""
 
-#: classes/user.php:330
+#: classes/user.php:331
 #, php-format
 msgid "Wrong password for user %s"
 msgstr ""
 
-#: classes/user.php:548
+#: classes/user.php:549
 #, php-format
 msgid "User %1$s: Access to %2$s changed to %3$s"
 msgstr ""
 
-#: classes/user.php:572
+#: classes/user.php:573
 #, php-format
 msgid "User %1$s: Permission to %2$s revoked."
 msgstr ""
 
-#: classes/user.php:611
+#: classes/user.php:612
 #, php-format
 msgid " User %1$s: Added to %2$s group."
 msgstr ""
 
-#: classes/user.php:626
+#: classes/user.php:627
 #, php-format
 msgid " User %1$s: Removed from %2$s group."
 msgstr ""
 
-#: classes/utils.php:421
+#: classes/utils.php:432
 #, php-format
 msgid "Unsupported digest algorithm \"%s\""
 msgstr ""
 
-#: classes/utils.php:431 classes/utils.php:492 classes/utils.php:531
+#: classes/utils.php:442 classes/utils.php:503 classes/utils.php:542
 msgid "Invalid hash"
 msgstr ""
 
-#: classes/utils.php:737
+#: classes/utils.php:744
 msgid "Unbalanced braces."
 msgstr ""
 
-#: classes/utils.php:1238
+#: classes/utils.php:1245
 msgid "Not set"
 msgstr ""
 
@@ -1223,100 +1273,48 @@ msgstr ""
 msgid "xmlrpc extension not found"
 msgstr ""
 
-#: classes/themes.php:57
+#: classes/themes.php:58
 msgid "This theme is a legacy theme that is not compatible with Habari "
 msgstr ""
 
-#: classes/themes.php:129
+#: classes/themes.php:130
 msgid "There is no valid theme currently installed."
 msgstr ""
 
-#: classes/themes.php:194
+#: classes/themes.php:195
 #, php-format
 msgid ""
 "This theme requires the parent theme named \"%s\" to be present prior to "
 "activation."
 msgstr ""
 
-#: classes/themes.php:202
+#: classes/themes.php:203
 #, php-format
 msgid ""
 "This theme requires the feature \"<a href=\"%2$s\">%1$s</a>\" to be present "
 "prior to activation."
 msgstr ""
 
-#: classes/themes.php:238
+#: classes/themes.php:239
 #, php-format
 msgid "Activated Theme: %s"
 msgstr ""
 
-#: classes/themes.php:259
+#: classes/themes.php:260
 #, php-format
 msgid "Previewed Theme: %s"
 msgstr ""
 
-#: classes/themes.php:274
+#: classes/themes.php:275
 #, php-format
 msgid "Canceled Theme Preview: %s"
 msgstr ""
 
-#: classes/themes.php:305
+#: classes/themes.php:306
 msgid "Theme not installed."
 msgstr ""
 
-#: classes/formui.php:909
-msgid "Relative urls are not allowed"
-msgstr ""
-
-#: classes/formui.php:915
-#, php-format
-msgid "Only %s urls are allowed"
-msgstr ""
-
-#: classes/formui.php:936
-msgid "Value must be a valid Email Address."
-msgstr ""
-
-#: classes/formui.php:955
-msgid "A value for this field is required."
-msgstr ""
-
-#: classes/formui.php:977
-msgid "That username is already in use!"
-msgstr ""
-
-#: classes/formui.php:997
-#, php-format
-msgid "The value of this field must match the value of %s."
-msgstr ""
-
-#: classes/formui.php:1020
-msgid "The value does not meet submission requirements"
-msgstr ""
-
-#: classes/formui.php:1041
-#, php-format
-msgid "The value entered is lesser than the minimum of %d."
-msgstr ""
-
-#: classes/formui.php:1047
-#, php-format
-msgid "The value entered is greater than the maximum of %d."
-msgstr ""
-
-#: classes/formui.php:1877
-msgid "Remove item"
-msgstr ""
-
-#: classes/formui.php:1877 admin/formcontrols/formcontrol_textmulti.php:33
-msgid "remove"
-msgstr "видалити"
-
-#: classes/formui.php:1881
-msgid "Remove this item?"
-msgstr ""
-
-#: classes/session.php:131
+#: classes/session.php:139
 msgid "Your session expired."
 msgstr ""
 
@@ -1338,122 +1336,145 @@ msgstr ""
 msgid "Not a valid color format."
 msgstr ""
 
-#: classes/acl.php:150
+#: classes/acl.php:160
 #, php-format
 msgid "Permission token deleted: %s"
 msgstr ""
 
-#: classes/acl.php:628
+#: classes/acl.php:637
 #, php-format
 msgid "Group %1$s: Access to %2$s changed to %3$s"
 msgstr ""
 
-#: classes/acl.php:718
+#: classes/acl.php:727
 #, php-format
 msgid "Group %1$s: Permission to %2$s revoked."
 msgstr ""
 
-#: classes/acl.php:780
-msgid "Manage comments on all posts"
-msgstr ""
-
-#: classes/acl.php:781
-msgid "Manage comments on one's own posts"
-msgstr ""
-
-#: classes/acl.php:782 handlers/adminhandler.php:330
-msgid "Manage tags"
-msgstr ""
-
-#: classes/acl.php:783
-msgid "Manage options"
-msgstr ""
-
-#: classes/acl.php:784
-msgid "Change theme"
-msgstr ""
-
-#: classes/acl.php:785
-msgid "Configure the active theme"
-msgstr ""
-
-#: classes/acl.php:786
-msgid "Activate/deactivate plugins"
-msgstr ""
-
-#: classes/acl.php:787
-msgid "Configure active plugins"
-msgstr ""
-
-#: classes/acl.php:788
-msgid "Use the importer"
-msgstr ""
-
-#: classes/acl.php:789
-msgid "Add, remove, and edit users"
-msgstr ""
-
-#: classes/acl.php:790 handlers/installhandler.php:1634
-msgid "Edit own profile"
-msgstr ""
-
-#: classes/acl.php:791
-msgid "Manage groups and permissions"
-msgstr ""
-
-#: classes/acl.php:792
-msgid "Manage logs"
-msgstr ""
-
-#: classes/acl.php:793 handlers/installhandler.php:1639
-msgid "Manage dashboard modules"
-msgstr ""
-
-#: classes/acl.php:796 handlers/installhandler.php:1585
-msgid "Permissions on one's own posts"
-msgstr ""
-
-#: classes/acl.php:797
-msgid "Permissions to all posts"
-msgstr ""
-
-#: classes/acl.php:798 handlers/installhandler.php:1739
-msgid "Permissions to other users' unpublished posts"
-msgstr ""
-
-#: classes/acl.php:804 handlers/adminhandler.php:329
-msgid "Comments"
-msgstr ""
-
-#: classes/acl.php:821 classes/acl.php:823 handlers/installhandler.php:718
+#: classes/acl.php:830 classes/acl.php:832 handlers/installhandler.php:718
 msgid "admin"
 msgstr ""
 
-#: classes/acl.php:826 classes/acl.php:828 handlers/installhandler.php:729
+#: classes/acl.php:835 classes/acl.php:837 handlers/installhandler.php:729
 msgid "anonymous"
 msgstr ""
 
-#: classes/acl.php:857 classes/acl.php:859 handlers/installhandler.php:1596
-#: handlers/installhandler.php:1598
+#: classes/acl.php:866 classes/acl.php:868 handlers/installhandler.php:1592
+#: handlers/installhandler.php:1594
 msgid "authenticated"
 msgstr ""
 
-#. @locale The names of the CRUD group token permissions
-#: classes/acl.php:872
+#: classes/acl.php:904
+msgid "Permissions for super users"
+msgstr ""
+
+#: classes/acl.php:906
+msgid "Manage comments on all posts"
+msgstr ""
+
+#: classes/acl.php:907
+msgid "Manage comments on one's own posts"
+msgstr ""
+
+#: classes/acl.php:908 handlers/adminhandler.php:330
+msgid "Manage tags"
+msgstr ""
+
+#: classes/acl.php:909
+msgid "Manage options"
+msgstr ""
+
+#: classes/acl.php:910
+msgid "Change theme"
+msgstr ""
+
+#: classes/acl.php:911
+msgid "Configure the active theme"
+msgstr ""
+
+#: classes/acl.php:912
+msgid "Activate/deactivate plugins"
+msgstr ""
+
+#: classes/acl.php:913
+msgid "Configure active plugins"
+msgstr ""
+
+#: classes/acl.php:914
+msgid "Use the importer"
+msgstr ""
+
+#: classes/acl.php:915
+msgid "Add, remove, and edit users"
+msgstr ""
+
+#: classes/acl.php:916 handlers/installhandler.php:1630
+msgid "Edit own profile"
+msgstr ""
+
+#: classes/acl.php:917
+msgid "Manage groups and permissions"
+msgstr ""
+
+#: classes/acl.php:918
+msgid "Manage logs"
+msgstr ""
+
+#: classes/acl.php:919 handlers/installhandler.php:1635
+msgid "Manage dashboard modules"
+msgstr ""
+
+#: classes/acl.php:921 handlers/installhandler.php:1581
+msgid "Permissions on one's own posts"
+msgstr ""
+
+#: classes/acl.php:922
+msgid "Permissions to all posts"
+msgstr ""
+
+#: classes/acl.php:923
+msgid "Permissions to other user's unpublished posts"
+msgstr ""
+
+#: classes/acl.php:924
+msgid "Make comments on any post"
+msgstr ""
+
+#: classes/acl.php:945
+msgid "Super User"
+msgstr ""
+
+#: classes/acl.php:946
+msgid "Administration"
+msgstr ""
+
+#: classes/acl.php:948 handlers/adminhandler.php:329
+msgid "Comments"
+msgstr ""
+
+#: classes/acl.php:963
 msgid "read"
 msgstr ""
 
-#: classes/acl.php:872 plugins/menus/menus.plugin.php:773
+#: classes/acl.php:964
+msgid "create"
+msgstr ""
+
+#: classes/acl.php:965 plugins/menus/menus.plugin.php:794
 msgid "edit"
 msgstr ""
 
-#: classes/acl.php:872 plugins/menus/menus.plugin.php:775
+#: classes/acl.php:966 plugins/menus/menus.plugin.php:796
 msgid "delete"
 msgstr ""
 
-#: classes/acl.php:872
-msgid "create"
-msgstr ""
+#: classes/acl.php:967
+msgid "deny"
+msgstr "відхилити"
+
+#: classes/acl.php:968
+msgid "allow"
+msgstr "дозволити"
 
 #: classes/block.php:241
 #, php-format
@@ -1471,89 +1492,89 @@ msgid "%1$s in %2$s line %3$s on request of \"%4$s\""
 msgstr ""
 
 #. @locale A fatal PHP error at runtime. Code execution is stopped
-#: classes/error.php:117
+#: classes/error.php:126
 msgid "Error"
 msgstr ""
 
 #. @locale A non-fatal PHP error at runtime. Code execution is not stopped
-#: classes/error.php:119
+#: classes/error.php:128
 msgid "Warning"
 msgstr ""
 
 #. @locale A fatal PHP error generated while parsing the PHP
-#: classes/error.php:121
+#: classes/error.php:130
 msgid "Parse Error"
 msgstr ""
 
 #. @locale PHP encountered something at runtime that could be an error or
 #. intended
-#: classes/error.php:123
+#: classes/error.php:132
 msgid "Notice"
 msgstr ""
 
 #. @locale A fatal PHP error during PHP startup. Code execution is stopped.
-#: classes/error.php:125
+#: classes/error.php:134
 msgid "Core Error"
 msgstr ""
 
 #. @locale A non-fatal PHP during PHP startup. Code execution is not stopped.
-#: classes/error.php:127
+#: classes/error.php:136
 msgid "Core Warning"
 msgstr ""
 
 #. @locale A fatal PHP error at runtime. Code execution is stopped.
-#: classes/error.php:129
+#: classes/error.php:138
 msgid "Compile Error"
 msgstr ""
 
 #. @locale A non-fatal PHP error at runtime. Code execution is not stopped.
-#: classes/error.php:131
+#: classes/error.php:140
 msgid "Compile Warning"
 msgstr ""
 
 #. @locale A fatal error generated by Habari or an addon. Code execution is
 #. stopped.
-#: classes/error.php:133
+#: classes/error.php:142
 msgid "User Error"
 msgstr ""
 
 #. @locale A non-fatal error generated by Habari or an addon. Code execution
 #. is not stopped.
-#: classes/error.php:135
+#: classes/error.php:144
 msgid "User Warning"
 msgstr ""
 
 #. @locale PHP encountered something generated by Habari or an addon at
 #. runtime that could be an error or intended
-#: classes/error.php:137
+#: classes/error.php:146
 msgid "User Notice"
 msgstr ""
 
 #. @locale A suggestion from PHP that the code may need updated for
 #. interoperability or forward compatibility
-#: classes/error.php:139
+#: classes/error.php:148
 msgid "Strict Notice"
 msgstr ""
 
 #. @locale A fatal PHP error at runtime. An error handler may be able to work
 #. around it. If not, code execution stops.
-#: classes/error.php:141
+#: classes/error.php:150
 msgid "Recoverable Error"
 msgstr ""
 
 #. @locale A notification from PHP that the code is outdated and may not work
 #. in the future
-#: classes/error.php:145
+#: classes/error.php:154
 msgid "Deprecated violation"
 msgstr ""
 
 #. @locale A notification that the code is outdated and Habari may not work
 #. with it in the future
-#: classes/error.php:147
+#: classes/error.php:156
 msgid "User deprecated violation"
 msgstr ""
 
-#: classes/error.php:230
+#: classes/error.php:239
 #, php-format
 msgid " &hellip;%d arg&hellip; "
 msgid_plural " &hellip;%d args&hellip; "
@@ -1561,22 +1582,22 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: classes/error.php:234
+#: classes/error.php:243
 #, php-format
 msgid ""
 "%s line %d:\n"
 "  %s(%s)\n"
 msgstr ""
 
-#: classes/curlrequestprocessor.php:95
+#: classes/curlrequestprocessor.php:101
 msgid "CURL Error. Unable to create temporary file name."
 msgstr ""
 
-#: classes/curlrequestprocessor.php:100
+#: classes/curlrequestprocessor.php:106
 msgid "CURL Error. Unable to open temporary file."
 msgstr ""
 
-#: classes/curlrequestprocessor.php:135
+#: classes/curlrequestprocessor.php:141
 #, php-format
 msgid "CURL Error %1$d: %2$s"
 msgstr ""
@@ -1657,186 +1678,188 @@ msgid "Permanently deleted %d posts"
 msgstr ""
 
 #: plugins/pingback/pingback.plugin.php:278
+#: plugins/pingback/pingback.plugin.php:298
 #, php-format
 msgid ""
 "Unable to retrieve target, can't detect pingback endpoint. (Source: %1$s | "
 "Target: %2$s)"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:301
+#: plugins/pingback/pingback.plugin.php:318
 #, php-format
 msgid "Invalid Pingback endpoint - %1$s (Source: %2$s | Target: %3$s)"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:306
+#: plugins/pingback/pingback.plugin.php:323
 #, php-format
 msgid "Pingback error: %1$s - %2$s (Source: %3$s | Target: %4$s)"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:377
+#: plugins/pingback/pingback.plugin.php:394
 #, php-format
 msgid "Sent pingbacks for \"%1$s\", target: %2$s"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:389
-#: handlers/adminoptionshandler.php:51
+#: plugins/pingback/pingback.plugin.php:406
+#: handlers/adminoptionshandler.php:54
 msgid "Publishing"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:390
+#: plugins/pingback/pingback.plugin.php:407
 msgid "Send Pingbacks to Links"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:416
-#: plugins/pingback/pingback.plugin.php:422
+#: plugins/pingback/pingback.plugin.php:433
+#: plugins/pingback/pingback.plugin.php:439
 #, php-format
 msgid "%d Pingbacks"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:419
+#: plugins/pingback/pingback.plugin.php:436
 #, php-format
 msgid "%d Pingback"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:633
-#: plugins/flickrsilo/flickrsilo.plugin.php:1008
-#: plugins/coreblocks/coreblocks.plugin.php:377 themes/mzingi/searchform.php:6
+#: plugins/flickrsilo/flickrsilo.plugin.php:648
+#: plugins/flickrsilo/flickrsilo.plugin.php:1055
+#: plugins/coreblocks/coreblocks.plugin.php:395 themes/mzingi/searchform.php:6
 msgid "Search"
 msgstr "Пошук"
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:638
+#: plugins/flickrsilo/flickrsilo.plugin.php:653
 msgid "Search CC"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:644
+#: plugins/flickrsilo/flickrsilo.plugin.php:659
 msgid "Photos"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:649
+#: plugins/flickrsilo/flickrsilo.plugin.php:664
 msgid "Videos"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:654 handlers/adminhandler.php:330
+#: plugins/flickrsilo/flickrsilo.plugin.php:669 handlers/adminhandler.php:330
 msgid "Tags"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:659
+#: plugins/flickrsilo/flickrsilo.plugin.php:674
 msgid "Sets"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:807
+#: plugins/flickrsilo/flickrsilo.plugin.php:840
 msgid "This photo has no title"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:824
+#: plugins/flickrsilo/flickrsilo.plugin.php:857
 msgid "De-Authorize"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:827
+#: plugins/flickrsilo/flickrsilo.plugin.php:860
 msgid "Authorize"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:842
+#: plugins/flickrsilo/flickrsilo.plugin.php:875
 msgid ""
 "You have already successfully authorized Habari to access your Flickr "
 "account."
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:843
+#: plugins/flickrsilo/flickrsilo.plugin.php:876
 #, php-format
 msgid "Do you want to <a href=\"%1$s\">revoke authorization</a>?"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:850
+#: plugins/flickrsilo/flickrsilo.plugin.php:883
 #, php-format
 msgid ""
-"To use this plugin, you must <a href=\"%1$s\">authorized Habari to have "
-"access to your Flickr account</a>."
+"To use this plugin, you must <a href=\"%1$s\">authorize Habari to access "
+"your Flickr account</a>."
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:851
+#: plugins/flickrsilo/flickrsilo.plugin.php:884
 #, php-format
 msgid ""
 "When you have completed the authorization on Flickr, return here and <a "
 "href=\"%1$s\">confirm that the authorization was successful</a>."
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:865
+#: plugins/flickrsilo/flickrsilo.plugin.php:898
 #, php-format
 msgid ""
-"Either you have already authorized Habari to access your flickr account, or "
-"you have not yet done so.  Please <a href=\"%1$s\">try again</a>."
+"Data submission was unsuccessful and it could not be determined if you have "
+"already authorized Habari to access your flickr account, or you have not yet"
+" done so. Please <a href=\"%1$s\">try again</a>."
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:871
+#: plugins/flickrsilo/flickrsilo.plugin.php:904
 msgid "Your authorization was set successfully."
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:874
+#: plugins/flickrsilo/flickrsilo.plugin.php:907
 msgid "There was a problem with your authorization:"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:889
+#: plugins/flickrsilo/flickrsilo.plugin.php:922
 msgid "The Flickr Silo Plugin authorization has been deleted."
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:890
+#: plugins/flickrsilo/flickrsilo.plugin.php:923
 msgid "Do you want to "
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:890
+#: plugins/flickrsilo/flickrsilo.plugin.php:923
 msgid "re-authorize this plugin"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:900
+#: plugins/flickrsilo/flickrsilo.plugin.php:933
 msgid "Default size for images in Posts:"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:901
+#: plugins/flickrsilo/flickrsilo.plugin.php:935
 msgid "Square"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:901
+#: plugins/flickrsilo/flickrsilo.plugin.php:936
 msgid "Thumbnail"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:901
+#: plugins/flickrsilo/flickrsilo.plugin.php:937
 msgid "Small"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:901
+#: plugins/flickrsilo/flickrsilo.plugin.php:938
 msgid "Medium"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:901
+#: plugins/flickrsilo/flickrsilo.plugin.php:939
 msgid "Large"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:901
+#: plugins/flickrsilo/flickrsilo.plugin.php:940
 msgid "Original Size"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:903 themes/charcoal/theme.php:69
+#: plugins/flickrsilo/flickrsilo.plugin.php:944 themes/charcoal/theme.php:60
 msgid "Options saved"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:934
+#: plugins/flickrsilo/flickrsilo.plugin.php:975
 msgid "embed_photo"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:935
+#: plugins/flickrsilo/flickrsilo.plugin.php:976
 msgid "embed_video"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:936
+#: plugins/flickrsilo/flickrsilo.plugin.php:977
 msgid "thumbnail"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:937
+#: plugins/flickrsilo/flickrsilo.plugin.php:978
 msgid "Open in new window"
 msgstr ""
 
-#: plugins/flickrsilo/flickrsilo.plugin.php:1008
+#: plugins/flickrsilo/flickrsilo.plugin.php:1055
 msgid "Search for photos"
 msgstr ""
 
@@ -1893,150 +1916,152 @@ msgstr ""
 msgid "The selected action is forbidden."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:29
+#: plugins/wpimport/wpimport.plugin.php:43
 msgid "WordPress Database"
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:70
+#: plugins/wpimport/wpimport.plugin.php:101
 msgid ""
 "Could not connect to the WordPress database using the values supplied. "
 "Please correct them and try again."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:113
+#: plugins/wpimport/wpimport.plugin.php:153
+#: plugins/wpimport/wpimport.plugin.php:265
 msgid "Habari will attempt to import from a WordPress database."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:123
-#: plugins/wpimport/wpimport.plugin.php:205 installer/db_setup.php:76
-#: installer/db_setup.php:123
-msgid "Database Name"
-msgstr ""
-
-#: plugins/wpimport/wpimport.plugin.php:127
-#: plugins/wpimport/wpimport.plugin.php:208 installer/db_setup.php:43
-#: installer/db_setup.php:90
-msgid "Database Host"
-msgstr ""
-
-#: plugins/wpimport/wpimport.plugin.php:131
 #: plugins/wpimport/wpimport.plugin.php:211
-msgid "Database User"
-msgstr ""
-
-#: plugins/wpimport/wpimport.plugin.php:135
-#: plugins/wpimport/wpimport.plugin.php:214
-msgid "Database Password"
-msgstr ""
-
-#: plugins/wpimport/wpimport.plugin.php:139
-#: plugins/wpimport/wpimport.plugin.php:217 installer/db_setup.php:149
-msgid "Table Prefix"
-msgstr ""
-
-#: plugins/wpimport/wpimport.plugin.php:143
-#: plugins/wpimport/wpimport.plugin.php:220
-msgid "Import Categories as Tags"
-msgstr ""
-
-#: plugins/wpimport/wpimport.plugin.php:147
-#: plugins/wpimport/wpimport.plugin.php:223 handlers/adminhandler.php:335
-#: admin/import.php:11
-msgid "Import"
-msgstr "Імпорт:"
-
-#: plugins/wpimport/wpimport.plugin.php:165
 #, php-format
 msgid "Starting import from \"%s\""
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:167
+#: plugins/wpimport/wpimport.plugin.php:213
 msgid "Import in Progress"
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:168
+#: plugins/wpimport/wpimport.plugin.php:214
 msgid "Starting Import&hellip;"
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:264
-#: plugins/wpimport/wpimport.plugin.php:265
-#: plugins/wpimport/wpimport.plugin.php:371
-#: plugins/wpimport/wpimport.plugin.php:372
-#: plugins/wpimport/wpimport.plugin.php:595
-#: plugins/wpimport/wpimport.plugin.php:596
+#: plugins/wpimport/wpimport.plugin.php:267 installer/db_setup.php:76
+#: installer/db_setup.php:123
+msgid "Database Name"
+msgstr ""
+
+#: plugins/wpimport/wpimport.plugin.php:271 installer/db_setup.php:43
+#: installer/db_setup.php:90
+msgid "Database Host"
+msgstr ""
+
+#: plugins/wpimport/wpimport.plugin.php:275
+msgid "Database User"
+msgstr ""
+
+#: plugins/wpimport/wpimport.plugin.php:279
+msgid "Database Password"
+msgstr ""
+
+#: plugins/wpimport/wpimport.plugin.php:283 installer/db_setup.php:149
+msgid "Table Prefix"
+msgstr ""
+
+#: plugins/wpimport/wpimport.plugin.php:287
+msgid "Import Categories as Tags"
+msgstr ""
+
+#: plugins/wpimport/wpimport.plugin.php:295 handlers/adminhandler.php:335
+#: admin/import.php:11
+msgid "Import"
+msgstr "Імпорт:"
+
+#: plugins/wpimport/wpimport.plugin.php:352
+#: plugins/wpimport/wpimport.plugin.php:353
+#: plugins/wpimport/wpimport.plugin.php:464
+#: plugins/wpimport/wpimport.plugin.php:465
+#: plugins/wpimport/wpimport.plugin.php:693
+#: plugins/wpimport/wpimport.plugin.php:694
 #, php-format
 msgid "Failed to import from \"%s\""
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:266
-#: plugins/wpimport/wpimport.plugin.php:373
-#: plugins/wpimport/wpimport.plugin.php:597
+#: plugins/wpimport/wpimport.plugin.php:354
+#: plugins/wpimport/wpimport.plugin.php:466
+#: plugins/wpimport/wpimport.plugin.php:695
 msgid "Failed to connect using the given database connection details."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:277
+#: plugins/wpimport/wpimport.plugin.php:365
 msgid "Importing Users&hellip;"
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:292
-#: plugins/wpimport/wpimport.plugin.php:294
+#: plugins/wpimport/wpimport.plugin.php:380
+#: plugins/wpimport/wpimport.plugin.php:382
 #, php-format
 msgid "Associated imported user %1$s with existing user %2$s"
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:319
-#: plugins/wpimport/wpimport.plugin.php:321
+#: plugins/wpimport/wpimport.plugin.php:407
+#: plugins/wpimport/wpimport.plugin.php:409
 #, php-format
 msgid "Created new user %1$s. Their old ID was %2$d."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:329
+#: plugins/wpimport/wpimport.plugin.php:417
 #, php-format
 msgid ""
 "There was an error importing user %s. See the EventLog for the error "
 "message. "
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:331
-#: plugins/wpimport/wpimport.plugin.php:536
-#: plugins/wpimport/wpimport.plugin.php:740
+#: plugins/wpimport/wpimport.plugin.php:419
+#: plugins/wpimport/wpimport.plugin.php:629
+#: plugins/wpimport/wpimport.plugin.php:838
 msgid "Rolling back changes&hellip;"
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:389
+#: plugins/wpimport/wpimport.plugin.php:482
 #, php-format
 msgid "Importing posts %1$d - %2$d of %3$d."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:534
+#: plugins/wpimport/wpimport.plugin.php:627
 #, php-format
 msgid ""
 "There was an error importing post %s. See the EventLog for the error "
 "message."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:613
+#: plugins/wpimport/wpimport.plugin.php:711
 #, php-format
 msgid "Importing comments %1$d - %2$d of %3$d."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:738
+#: plugins/wpimport/wpimport.plugin.php:836
 #, php-format
 msgid ""
 "There was an error importing comment ID %d. See the EventLog for the error "
 "message."
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:772
+#: plugins/wpimport/wpimport.plugin.php:870
 #, php-format
 msgid "Import completed from \"%s\""
 msgstr ""
 
-#: plugins/wpimport/wpimport.plugin.php:773
+#: plugins/wpimport/wpimport.plugin.php:871
 msgid "Import is complete."
 msgstr ""
 
-#: plugins/simple_private_posts/simple_private_posts.plugin.php:26
+#: plugins/simple_private_posts/simple_private_posts.plugin.php:30
+msgid "Permission to read posts marked as \"private\""
+msgstr ""
+
+#: plugins/simple_private_posts/simple_private_posts.plugin.php:44
+msgid "Private Posts"
+msgstr ""
+
+#: plugins/simple_private_posts/simple_private_posts.plugin.php:61
 msgid "Private Post"
 msgstr ""
 
@@ -2057,7 +2082,7 @@ msgstr ""
 
 #: plugins/coredashmodules/coredashmodules.plugin.php:37
 #: plugins/coredashmodules/coredashmodules.plugin.php:51
-#: plugins/coredashmodules/coredashmodules.plugin.php:267
+#: plugins/coredashmodules/coredashmodules.plugin.php:269
 msgid "Post Types and Statuses"
 msgstr ""
 
@@ -2066,8 +2091,8 @@ msgid "Number of items"
 msgstr ""
 
 #. @locale First variable is the post status, second is the post type
-#: plugins/coredashmodules/coredashmodules.plugin.php:156
-#: plugins/coredashmodules/coredashmodules.plugin.php:224
+#: plugins/coredashmodules/coredashmodules.plugin.php:158
+#: plugins/coredashmodules/coredashmodules.plugin.php:226
 #, php-format
 msgid "%1$s %2$s"
 msgstr ""
@@ -2101,211 +2126,211 @@ msgstr ""
 #. @locale Date formats according to
 #. http://php.net/manual/en/function.date.php
 #: plugins/coredashmodules/dashboard.block.latest_comments.php:19
-#: plugins/coredashmodules/dashboard.block.latest_entries.php:10
+#: plugins/coredashmodules/dashboard.block.latest_entries.php:9
 msgid "F jS, Y"
 msgstr ""
 
 #: plugins/coredashmodules/dashboard.block.latest_comments.php:20
-#: plugins/coredashmodules/dashboard.block.latest_entries.php:11
+#: plugins/coredashmodules/dashboard.block.latest_entries.php:10
 #, php-format
 msgid "Posted at %1$s on %2$s"
 msgstr ""
 
 #. @locale Time formats according to
 #. http://php.net/manual/en/function.date.php
-#: plugins/coredashmodules/dashboard.block.latest_entries.php:9
+#: plugins/coredashmodules/dashboard.block.latest_entries.php:8
 msgid "g:i"
 msgstr ""
 
 #. @locale Date formats according to
 #. http://php.net/manual/en/function.date.php
-#: plugins/coredashmodules/dashboard.block.latest_entries.php:11
+#: plugins/coredashmodules/dashboard.block.latest_entries.php:10
 #: plugins/coredashmodules/dashboard.block.latest_log_activity.php:8
 msgid "M j"
 msgstr ""
 
-#: plugins/coredashmodules/dashboard.block.latest_entries.php:12
+#: plugins/coredashmodules/dashboard.block.latest_entries.php:11
 #: admin/posts_items.php:18 admin/posts_items.php:30
 #, php-format
 msgid "Edit '%s'"
 msgstr "Редагувати '%s'"
 
-#: plugins/coredashmodules/dashboard.block.latest_entries.php:12
-#: admin/plugin.php:36 admin/posts_items.php:24 admin/themes.php:10
-#: admin/themes.php:119
+#: plugins/coredashmodules/dashboard.block.latest_entries.php:11
+#: admin/plugin.php:30 admin/posts_items.php:24 admin/themes.php:10
+#: admin/themes.php:122
 msgid "by"
 msgstr "від"
 
-#: plugins/menus/menus.plugin.php:41
+#: plugins/menus/menus.plugin.php:41 plugins/menus/menus.plugin.php:59
 msgid "Manage menus"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:91 plugins/menus/menus.plugin.php:568
+#: plugins/menus/menus.plugin.php:105
 msgid "Menu"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:100
+#: plugins/menus/menus.plugin.php:114
 msgid "Menu Taxonomy"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:101
+#: plugins/menus/menus.plugin.php:115
 msgid "Wrap each menu link in a div"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:102
+#: plugins/menus/menus.plugin.php:116
 msgid "Custom class for the tree's ordered list element"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:135 plugins/menus/menus.plugin.php:136
-#: plugins/menus/menus.plugin.php:219 plugins/menus/menus.plugin.php:220
+#: plugins/menus/menus.plugin.php:149 plugins/menus/menus.plugin.php:150
+#: plugins/menus/menus.plugin.php:233 plugins/menus/menus.plugin.php:234
 msgid "Menus"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:295
+#: plugins/menus/menus.plugin.php:309
 msgid "Link"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:297
-msgid "Link Title"
-msgstr ""
-
-#: plugins/menus/menus.plugin.php:298
+#: plugins/menus/menus.plugin.php:312
 msgid "A name is required."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:299
-msgid "Link URL"
-msgstr ""
-
-#: plugins/menus/menus.plugin.php:301
+#: plugins/menus/menus.plugin.php:315
 msgid "You must supply a valid URL."
 msgstr ""
 
+#: plugins/menus/menus.plugin.php:321
+msgid "Link Title"
+msgstr ""
+
 #: plugins/menus/menus.plugin.php:322
+msgid "Link URL"
+msgstr ""
+
+#: plugins/menus/menus.plugin.php:336
 msgid "Link added."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:340 plugins/menus/menus.plugin.php:426
+#: plugins/menus/menus.plugin.php:354 plugins/menus/menus.plugin.php:442
 msgid "Link updated."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:352
+#: plugins/menus/menus.plugin.php:366
 msgid "Spacer"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:354
-msgid "Item text"
-msgstr ""
-
-#: plugins/menus/menus.plugin.php:355
+#: plugins/menus/menus.plugin.php:368
 msgid "Leave blank for blank space"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:374
+#: plugins/menus/menus.plugin.php:368
+msgid "Item text"
+msgstr ""
+
+#: plugins/menus/menus.plugin.php:387
 msgid "Spacer added."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:380
+#: plugins/menus/menus.plugin.php:393
 msgid "Spacer updated."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:386
+#: plugins/menus/menus.plugin.php:399
 msgid "Links to Posts"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:392
+#: plugins/menus/menus.plugin.php:405
 msgid "Title to display"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:399
+#: plugins/menus/menus.plugin.php:414
 msgid "Posts"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:419
+#: plugins/menus/menus.plugin.php:435
 msgid "Link(s) added."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:487
+#: plugins/menus/menus.plugin.php:509
 #, php-format
 msgid "Update %s"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:490 plugins/menus/menus.plugin.php:564
+#: plugins/menus/menus.plugin.php:512 plugins/menus/menus.plugin.php:586
 #, php-format
 msgid "Add %s"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:503
+#: plugins/menus/menus.plugin.php:523
 msgid "Menu item added."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:513
+#: plugins/menus/menus.plugin.php:533
 msgid "Menu item updated."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:540
+#: plugins/menus/menus.plugin.php:560
 msgid "Invalid Menu."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:547 handlers/userhandler.php:153
-#: themes/charcoal/theme.php:228
-msgid "Name"
-msgstr "Ім'я"
-
-#: plugins/menus/menus.plugin.php:548 plugins/menus/menus.plugin.php:592
+#: plugins/menus/menus.plugin.php:568 plugins/menus/menus.plugin.php:612
 msgid "You must supply a valid menu name"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:553 plugins/menus/menus.plugin.php:594
+#: plugins/menus/menus.plugin.php:571 handlers/userhandler.php:153
+#: themes/charcoal/theme.php:219
+msgid "Name"
+msgstr "Ім'я"
+
+#: plugins/menus/menus.plugin.php:576 plugins/menus/menus.plugin.php:615
 msgid "Description"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:575
+#: plugins/menus/menus.plugin.php:598
 msgid "Apply Changes"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:582
+#: plugins/menus/menus.plugin.php:602
 msgid "Delete Menu"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:591
+#: plugins/menus/menus.plugin.php:614
 msgid "Menu Name"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:595
+#: plugins/menus/menus.plugin.php:616
 msgid "Create Menu"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:606
+#: plugins/menus/menus.plugin.php:627
 msgid "Menu deleted."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:611
+#: plugins/menus/menus.plugin.php:632
 msgid "Menu deletion failed - please try again."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:622
+#: plugins/menus/menus.plugin.php:643
 msgid "Item deleted."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:626
+#: plugins/menus/menus.plugin.php:647
 msgid "Item deletion failed - please try again."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:671
+#: plugins/menus/menus.plugin.php:692
 #, php-format
 msgid "Updated menu \"%s\"."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:716
+#: plugins/menus/menus.plugin.php:737
 msgid "Please choose a vocabulary name that does not already exist."
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:772
+#: plugins/menus/menus.plugin.php:793
 msgid "Edit this"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:774
+#: plugins/menus/menus.plugin.php:795
 msgid "Delete this"
 msgstr ""
 
@@ -2353,57 +2378,64 @@ msgstr ""
 msgid "Comments to show:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:137
+#: plugins/coreblocks/coreblocks.plugin.php:139
 msgid "Posts to show:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:147
+#: plugins/coreblocks/coreblocks.plugin.php:151
 msgid "Content Types to Include:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:187
+#: plugins/coreblocks/coreblocks.plugin.php:193
 msgid "Display full month names:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:188
-#: plugins/coreblocks/coreblocks.plugin.php:261
+#: plugins/coreblocks/coreblocks.plugin.php:196
+#: plugins/coreblocks/coreblocks.plugin.php:272
 msgid "Append post count:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:189
-#: plugins/coreblocks/coreblocks.plugin.php:262
+#: plugins/coreblocks/coreblocks.plugin.php:199
+#: plugins/coreblocks/coreblocks.plugin.php:275
 msgid "Preferred Output Style:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:190
-#: plugins/coreblocks/coreblocks.plugin.php:263
+#: plugins/coreblocks/coreblocks.plugin.php:200
+#: plugins/coreblocks/coreblocks.plugin.php:276
 msgid "Dropdown"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:190
-#: plugins/coreblocks/coreblocks.plugin.php:263
+#: plugins/coreblocks/coreblocks.plugin.php:200
+#: plugins/coreblocks/coreblocks.plugin.php:276
 msgid "List"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:322
+#: plugins/coreblocks/coreblocks.plugin.php:336
 msgid "Links to show:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:337 handlers/adminhandler.php:340
+#: plugins/coreblocks/coreblocks.plugin.php:353 handlers/adminhandler.php:340
 msgid "Logout"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:340 handlers/userhandler.php:157
-#: themes/charcoal/header.php:44
+#: plugins/coreblocks/coreblocks.plugin.php:356 handlers/userhandler.php:155
+#: handlers/userhandler.php:157 themes/charcoal/header.php:44
 msgid "Login"
 msgstr "Логін"
 
-#: plugins/coreblocks/coreblocks.plugin.php:362
+#: plugins/coreblocks/coreblocks.plugin.php:378
 msgid "Button:"
 msgstr ""
 
-#: plugins/coreblocks/coreblocks.plugin.php:392
+#: plugins/coreblocks/coreblocks.plugin.php:410
 msgid "Content:"
+msgstr ""
+
+#. @locale An item in the "Comments" menu list showing that a user commented
+#. on a post ("user on post")
+#: plugins/coreblocks/block.recent_comments.php:17
+#, php-format
+msgid "%1$s on %2$s"
 msgstr ""
 
 #: plugins/habarisilo/habarisilo.plugin.php:36
@@ -2419,345 +2451,387 @@ msgid ""
 "Habari Silo activation failed. PHP has not loaded the gd imaging library."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:53
+#: plugins/habarisilo/habarisilo.plugin.php:72
+msgid "Max thumbnail width:"
+msgstr ""
+
+#: plugins/habarisilo/habarisilo.plugin.php:73
+msgid "Only numbers may be entered for thumbnail width."
+msgstr ""
+
+#: plugins/habarisilo/habarisilo.plugin.php:74
+msgid "Max thumbnail height:"
+msgstr ""
+
+#: plugins/habarisilo/habarisilo.plugin.php:75
+msgid "Only numbers may be entered for thumbnail height."
+msgstr ""
+
+#: plugins/habarisilo/habarisilo.plugin.php:76
+msgid "Always create square thumbnails (pad with black if not high enough):"
+msgstr ""
+
+#: plugins/habarisilo/habarisilo.plugin.php:90
 msgid "Create media silo directories"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:54
+#: plugins/habarisilo/habarisilo.plugin.php:91
 msgid "Delete media silo directories"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:55
+#: plugins/habarisilo/habarisilo.plugin.php:92
 msgid "Upload files to media silos"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:56
+#: plugins/habarisilo/habarisilo.plugin.php:93
 msgid "Delete files from media silos"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:420
+#: plugins/habarisilo/habarisilo.plugin.php:474
 msgid "Browse"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:422
-#: plugins/habarisilo/habarisilo.plugin.php:583 admin/plugins.php:89
+#: plugins/habarisilo/habarisilo.plugin.php:476
+#: plugins/habarisilo/habarisilo.plugin.php:635 admin/plugins.php:76
 msgid "Upload"
 msgstr "Завантажити"
 
-#: plugins/habarisilo/habarisilo.plugin.php:425
+#: plugins/habarisilo/habarisilo.plugin.php:479
 msgid "Create Directory"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:428
+#: plugins/habarisilo/habarisilo.plugin.php:482
 msgid "Delete Directory"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:464
+#: plugins/habarisilo/habarisilo.plugin.php:518
 msgid "Parent Directory:"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:469
+#: plugins/habarisilo/habarisilo.plugin.php:523
 msgid "What would you like to call the new directory?"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:483
+#: plugins/habarisilo/habarisilo.plugin.php:537
 msgid "Directory:"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:488
+#: plugins/habarisilo/habarisilo.plugin.php:541
 msgid "Are you sure you want to delete this directory?"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:489
-#: plugins/habarisilo/habarisilo.plugin.php:506
-#: handlers/adminusershandler.php:182 handlers/admincommentshandler.php:459
+#: plugins/habarisilo/habarisilo.plugin.php:542
+#: plugins/habarisilo/habarisilo.plugin.php:558
+#: handlers/adminusershandler.php:176 handlers/admincommentshandler.php:439
 #: admin/block_instances.php:25 admin/block_instances.php:37
 #: admin/group.php:130 admin/posts_items.php:32 admin/publish.php:18
 #: admin/groups_item.php:11
 msgid "Delete"
 msgstr "Видалити"
 
-#: plugins/habarisilo/habarisilo.plugin.php:501
+#: plugins/habarisilo/habarisilo.plugin.php:554
 msgid "File:"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:505
+#: plugins/habarisilo/habarisilo.plugin.php:557
 msgid "Are you sure you want to delete this file?"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:517
+#: plugins/habarisilo/habarisilo.plugin.php:569
 msgid "File: "
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:526
+#: plugins/habarisilo/habarisilo.plugin.php:578
 #, php-format
 msgid "File uploaded: %s"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:532
+#: plugins/habarisilo/habarisilo.plugin.php:584
 msgid ""
 "The uploaded file exceeds the upload_max_filesize directive in php.ini."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:533
+#: plugins/habarisilo/habarisilo.plugin.php:585
 msgid ""
 "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
 "the HTML form."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:534
+#: plugins/habarisilo/habarisilo.plugin.php:586
 msgid "The uploaded file was only partially uploaded."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:535
+#: plugins/habarisilo/habarisilo.plugin.php:587
 msgid "No file was uploaded."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:536
+#: plugins/habarisilo/habarisilo.plugin.php:588
 msgid "Missing a temporary folder."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:537
+#: plugins/habarisilo/habarisilo.plugin.php:589
 msgid "Failed to write file to disk."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:538
+#: plugins/habarisilo/habarisilo.plugin.php:590
 msgid ""
 "A PHP extension stopped the file upload. PHP does not provide a way to "
 "ascertain which extension caused the file upload to stop; examining the list"
 " of loaded extensions with phpinfo() may help."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:540
+#: plugins/habarisilo/habarisilo.plugin.php:592
 #, php-format
 msgid "File upload failed: %s"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:546
-#: plugins/habarisilo/habarisilo.plugin.php:659
+#: plugins/habarisilo/habarisilo.plugin.php:598
+#: plugins/habarisilo/habarisilo.plugin.php:711
 msgid "Browse the current silo path."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:548
+#: plugins/habarisilo/habarisilo.plugin.php:600
 msgid ""
 "Suspicious behaviour or too much time has elapsed.  Please upload your file "
 "again."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:583
+#: plugins/habarisilo/habarisilo.plugin.php:635
 msgid "Upload to:"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:601
+#: plugins/habarisilo/habarisilo.plugin.php:653
 #, php-format
 msgid "The directory name contains invalid characters: %s."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:608
+#: plugins/habarisilo/habarisilo.plugin.php:660
 #, php-format
 msgid "Webserver does not have permission to create directory: %s."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:611
+#: plugins/habarisilo/habarisilo.plugin.php:663
 #, php-format
 msgid "Directory: %s already exists."
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:630
+#: plugins/habarisilo/habarisilo.plugin.php:682
 #, php-format
 msgid "Directory deleted: /%s"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:635
+#: plugins/habarisilo/habarisilo.plugin.php:687
 #, php-format
 msgid "Directory created: %s"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:654
+#: plugins/habarisilo/habarisilo.plugin.php:706
 #, php-format
 msgid "File deleted: /%s"
 msgstr ""
 
-#: plugins/habarisilo/habarisilo.plugin.php:656
+#: plugins/habarisilo/habarisilo.plugin.php:708
 #, php-format
 msgid "Failed to delete file: /%s"
 msgstr ""
 
-#: handlers/adminusershandler.php:30
-msgid "You"
-msgstr ""
+#: handlers/adminusershandler.php:25 installer/db_setup.php:54
+#: installer/db_setup.php:101 installer/db_setup.php:183
+msgid "Username"
+msgstr "Ім'я користувача"
 
 #: handlers/adminusershandler.php:31
-msgid "Your User Information"
-msgstr ""
+msgid "E-Mail"
+msgstr "E-mail"
 
-#: handlers/adminusershandler.php:39
-#, php-format
-msgid "%s's User Information"
-msgstr ""
+#: handlers/adminusershandler.php:36 handlers/userhandler.php:154
+#: installer/db_setup.php:65 installer/db_setup.php:112
+#: installer/db_setup.php:193
+msgid "Password"
+msgstr "Пароль"
 
-#: handlers/adminusershandler.php:43 handlers/adminhandler.php:116
-msgid "Access to that page has been denied by the administrator."
-msgstr ""
+#: handlers/adminusershandler.php:41
+msgid "Password Again"
+msgstr "Пароль ще раз"
 
-#: handlers/adminusershandler.php:50 handlers/adminusershandler.php:402
+#: handlers/adminusershandler.php:56 handlers/adminusershandler.php:165
+#: handlers/adminusershandler.php:414
 msgid "nobody"
 msgstr ""
 
-#: handlers/adminusershandler.php:64
-msgid "No such user!"
+#: handlers/adminusershandler.php:66 handlers/adminlogshandler.php:143
+#: admin/comments.php:20 admin/comments.php:44 admin/tags.php:32
+#: admin/posts.php:20 admin/posts.php:46
+msgid "Delete Selected"
+msgstr "Видалити вибране"
+
+#: handlers/adminusershandler.php:77
+msgid "User Information"
 msgstr ""
 
-#: handlers/adminusershandler.php:72
+#: handlers/adminusershandler.php:78
 msgid "Change Password"
 msgstr ""
 
-#: handlers/adminusershandler.php:73
+#: handlers/adminusershandler.php:79
 msgid "Regional Settings"
 msgstr ""
 
-#: handlers/adminusershandler.php:74 handlers/adminhandler.php:331
+#: handlers/adminusershandler.php:80 handlers/adminhandler.php:331
 msgid "Dashboard"
 msgstr ""
 
-#: handlers/adminusershandler.php:91
+#: handlers/adminusershandler.php:95
 msgid "Display Name"
 msgstr ""
 
-#: handlers/adminusershandler.php:95
+#: handlers/adminusershandler.php:98
 msgid "User Name"
 msgstr ""
 
-#: handlers/adminusershandler.php:105
+#: handlers/adminusershandler.php:104
 msgid "Portrait URL"
 msgstr ""
 
-#: handlers/adminusershandler.php:110
+#: handlers/adminusershandler.php:108
 msgid "New Password"
 msgstr ""
 
-#: handlers/adminusershandler.php:116
+#: handlers/adminusershandler.php:111
 msgid "New Password Again"
 msgstr ""
 
-#: handlers/adminusershandler.php:125
+#: handlers/adminusershandler.php:116
 msgid "Passwords must match."
 msgstr ""
 
-#: handlers/adminusershandler.php:131
+#: handlers/adminusershandler.php:123
 msgid "Timezone"
 msgstr ""
 
-#: handlers/adminusershandler.php:138 handlers/adminoptionshandler.php:90
+#: handlers/adminusershandler.php:126 handlers/adminoptionshandler.php:85
 msgid "Date Format"
 msgstr "Формат дати"
 
-#: handlers/adminusershandler.php:147 handlers/adminusershandler.php:158
+#: handlers/adminusershandler.php:133 handlers/adminusershandler.php:143
 #, php-format
 msgid "See <a href=\"%s\">php.net/date</a> for details. Current format: %s"
 msgstr ""
 
-#: handlers/adminusershandler.php:149 handlers/adminoptionshandler.php:95
+#: handlers/adminusershandler.php:136 handlers/adminoptionshandler.php:90
 msgid "Time Format"
 msgstr "Формат часу"
 
-#: handlers/adminusershandler.php:161
-msgid "Hide Spam Count"
-msgstr ""
-
-#: handlers/adminusershandler.php:163
+#: handlers/adminusershandler.php:147
 msgid "Hide the number of SPAM comments on your dashboard."
 msgstr ""
 
-#: handlers/adminusershandler.php:168 handlers/adminusershandler.php:170
-#: handlers/adminusershandler.php:171 handlers/adminhandler.php:338
+#: handlers/adminusershandler.php:148
+msgid "Hide Spam Count"
+msgstr ""
+
+#: handlers/adminusershandler.php:154 handlers/adminhandler.php:338
 msgid "Groups"
 msgstr ""
 
-#: handlers/adminusershandler.php:179 handlers/adminoptionshandler.php:182
+#: handlers/adminusershandler.php:161 handlers/adminoptionshandler.php:165
 #: admin/group.php:133
 msgid "Apply"
 msgstr ""
 
-#: handlers/adminusershandler.php:182
-#, php-format
-msgid "Reassign posts to: %s"
+#: handlers/adminusershandler.php:173
+msgid "Reassign posts to:"
 msgstr ""
 
-#: handlers/adminusershandler.php:182
+#: handlers/adminusershandler.php:175
 msgid "and"
 msgstr "та"
 
-#: handlers/adminusershandler.php:190 handlers/adminhandler.php:337
+#: handlers/adminusershandler.php:206
+msgid "No such user!"
+msgstr ""
+
+#: handlers/adminusershandler.php:220 handlers/adminhandler.php:116
+msgid "Access to that page has been denied by the administrator."
+msgstr ""
+
+#: handlers/adminusershandler.php:230 handlers/adminhandler.php:337
 msgid "My Profile"
 msgstr ""
 
-#: handlers/adminusershandler.php:190 admin/logs.php:39
-msgid "User"
-msgstr "Користувач"
+#: handlers/adminusershandler.php:230
+#, php-format
+msgid "User Profile for %s"
+msgstr ""
 
-#: handlers/adminusershandler.php:229
+#: handlers/adminusershandler.php:249
+msgid "You have insufficient permissions to manage your own user account."
+msgstr ""
+
+#: handlers/adminusershandler.php:254
+msgid "You have insufficient permissions to manage users."
+msgstr ""
+
+#: handlers/adminusershandler.php:273 handlers/adminusershandler.php:481
+msgid "You have insufficient permissions to delete users."
+msgstr ""
+
+#: handlers/adminusershandler.php:277 handlers/adminusershandler.php:486
+#: handlers/adminusershandler.php:508
+msgid ""
+"You may not assign posts from deleted users to a user that is being deleted"
+msgstr ""
+
+#: handlers/adminusershandler.php:316
 #, php-format
 msgid "%s has been deleted"
 msgstr ""
 
-#: handlers/adminusershandler.php:234 handlers/adminusershandler.php:377
-msgid "You cannot delete yourself."
+#: handlers/adminusershandler.php:319
+#, php-format
+msgid "There was a problem deleting %s"
 msgstr ""
 
-#: handlers/adminusershandler.php:242
+#: handlers/adminusershandler.php:338
 #, php-format
 msgid "%1$s has been renamed to %2$s."
 msgstr ""
 
-#: handlers/adminusershandler.php:255
+#: handlers/adminusershandler.php:351
 msgid "Password changed."
 msgstr ""
 
-#: handlers/adminusershandler.php:293
+#: handlers/adminusershandler.php:393
 msgid "User updated."
 msgstr ""
 
-#: handlers/adminusershandler.php:318 handlers/adminusershandler.php:428
-#: handlers/admintagshandler.php:41 handlers/admintagshandler.php:67
-#: handlers/admingroupshandler.php:117 handlers/admingroupshandler.php:224
-#: handlers/adminlogshandler.php:240 handlers/admincommentshandler.php:541
-#: handlers/adminpostshandler.php:455
-msgid "WSSE authentication failed."
+#: handlers/adminusershandler.php:448
+msgid "You have insufficient permissions to add users."
 msgstr ""
 
-#: handlers/adminusershandler.php:346
+#: handlers/adminusershandler.php:462
+#, php-format
+msgid "Added user '%s'"
+msgstr ""
+
+#: handlers/adminusershandler.php:490
+msgid "No users selected to delete!"
+msgstr ""
+
+#: handlers/adminusershandler.php:515
 msgid "No users deleted."
 msgstr ""
 
-#: handlers/adminusershandler.php:384
+#: handlers/adminusershandler.php:543
 #, php-format
-msgid "Deleted %d users."
-msgstr ""
+msgid "Deleted one user."
+msgid_plural "Deleted %s users."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
-#: handlers/adminusershandler.php:449
-msgid "Password is required."
-msgstr ""
-
-#: handlers/adminusershandler.php:452 handlers/installhandler.php:147
-msgid "Password mis-match."
-msgstr ""
-
-#: handlers/adminusershandler.php:455
-msgid "Please supply a valid email address."
-msgstr ""
-
-#: handlers/adminusershandler.php:458
-msgid "Please supply a user name."
-msgstr ""
-
-#: handlers/adminusershandler.php:463
-msgid "That username is already assigned."
-msgstr ""
-
-#: handlers/adminusershandler.php:468
-#, php-format
-msgid "Added user '%s'"
+#: handlers/adminusershandler.php:548
+msgid "There was a problem deleting users."
 msgstr ""
 
 #: handlers/atomhandler.php:143
@@ -2787,6 +2861,12 @@ msgstr ""
 
 #: handlers/feedbackhandler.php:164
 msgid "Your comment is pending moderation."
+msgstr ""
+
+#: handlers/admintagshandler.php:41 handlers/admintagshandler.php:67
+#: handlers/admingroupshandler.php:175 handlers/admingroupshandler.php:284
+#: handlers/admincommentshandler.php:521 handlers/adminpostshandler.php:455
+msgid "WSSE authentication failed."
 msgstr ""
 
 #: handlers/admintagshandler.php:86
@@ -2849,7 +2929,7 @@ msgstr ""
 msgid "Active Theme"
 msgstr ""
 
-#: handlers/adminhandler.php:196 handlers/adminoptionshandler.php:111
+#: handlers/adminhandler.php:196 handlers/adminoptionshandler.php:106
 msgid "System Locale"
 msgstr ""
 
@@ -2980,39 +3060,51 @@ msgstr ""
 msgid "Log out of the administration interface"
 msgstr ""
 
-#: handlers/admingroupshandler.php:163
-msgid "Updated permissions."
-msgstr ""
-
-#: handlers/admingroupshandler.php:243
-#, php-format
-msgid "The group %s already exists"
-msgstr ""
-
-#: handlers/admingroupshandler.php:252
+#: handlers/admingroupshandler.php:23 handlers/admingroupshandler.php:312
 msgid "The group must have a name"
 msgstr ""
 
-#: handlers/admingroupshandler.php:265
+#: handlers/admingroupshandler.php:25
+msgid "Group Name"
+msgstr "Назва групи"
+
+#: handlers/admingroupshandler.php:57
+msgid "You have insufficient permissions to add groups."
+msgstr ""
+
+#: handlers/admingroupshandler.php:70 handlers/admingroupshandler.php:325
 #, php-format
 msgid "Added group %s"
 msgstr ""
 
-#: handlers/admingroupshandler.php:302
+#: handlers/admingroupshandler.php:223
+msgid "Updated permissions."
+msgstr ""
+
+#: handlers/admingroupshandler.php:303
+#, php-format
+msgid "The group %s already exists"
+msgstr ""
+
+#: handlers/admingroupshandler.php:362
 msgid "No groups deleted."
 msgstr ""
 
-#: handlers/admingroupshandler.php:316
+#: handlers/admingroupshandler.php:376
 #, php-format
 msgid "Deleted %d groups."
+msgstr ""
+
+#: handlers/installhandler.php:147
+msgid "Password mis-match."
 msgstr ""
 
 #: handlers/installhandler.php:153
 msgid "Only printable characters are allowed."
 msgstr ""
 
-#: handlers/installhandler.php:159 handlers/installhandler.php:1866
-#: handlers/installhandler.php:1937
+#: handlers/installhandler.php:159 handlers/installhandler.php:1862
+#: handlers/installhandler.php:1933
 msgid "Allowed characters are A-Z, a-z and \"_\"."
 msgstr ""
 
@@ -3025,7 +3117,7 @@ msgid "Habari successfully installed."
 msgstr ""
 
 #: handlers/installhandler.php:228 handlers/adminpluginshandler.php:96
-#: handlers/adminpluginshandler.php:100 admin/themes.php:152
+#: handlers/adminpluginshandler.php:100 admin/themes.php:145
 msgid "Activate"
 msgstr "Активувати"
 
@@ -3075,27 +3167,27 @@ msgid "Problem creating first post."
 msgstr ""
 
 #: handlers/installhandler.php:557 handlers/installhandler.php:590
-#: handlers/installhandler.php:1881 handlers/installhandler.php:1952
+#: handlers/installhandler.php:1877 handlers/installhandler.php:1948
 msgid "Access denied. Make sure these credentials are valid."
 msgstr ""
 
 #: handlers/installhandler.php:560 handlers/installhandler.php:593
-#: handlers/installhandler.php:1885 handlers/installhandler.php:1956
+#: handlers/installhandler.php:1881 handlers/installhandler.php:1952
 msgid "That database does not exist."
 msgstr ""
 
 #: handlers/installhandler.php:563 handlers/installhandler.php:596
-#: handlers/installhandler.php:1889 handlers/installhandler.php:1960
+#: handlers/installhandler.php:1885 handlers/installhandler.php:1956
 msgid "Could not connect to host."
 msgstr ""
 
-#: handlers/installhandler.php:624 handlers/installhandler.php:2008
+#: handlers/installhandler.php:624 handlers/installhandler.php:2004
 #, php-format
 msgid ""
 "Cannot write to %s. The SQLite data file is not writable by the web server."
 msgstr ""
 
-#: handlers/installhandler.php:628 handlers/installhandler.php:2001
+#: handlers/installhandler.php:628 handlers/installhandler.php:1997
 #, php-format
 msgid ""
 "Cannot write to %s directory. SQLite requires that the directory that holds "
@@ -3110,17 +3202,17 @@ msgid ""
 "directory containing the database file be writable by the web server."
 msgstr ""
 
-#: handlers/installhandler.php:788 handlers/installhandler.php:1716
-#: handlers/installhandler.php:1822
+#: handlers/installhandler.php:788 handlers/installhandler.php:1712
+#: handlers/installhandler.php:1818
 msgid "Trim the log table"
 msgstr ""
 
-#: handlers/installhandler.php:791 handlers/installhandler.php:1724
-#: handlers/installhandler.php:1825
+#: handlers/installhandler.php:791 handlers/installhandler.php:1720
+#: handlers/installhandler.php:1821
 msgid "Perform a check for plugin updates."
 msgstr ""
 
-#: handlers/installhandler.php:794 handlers/installhandler.php:1832
+#: handlers/installhandler.php:794 handlers/installhandler.php:1828
 msgid "Perform session garbage collection."
 msgstr ""
 
@@ -3141,142 +3233,146 @@ msgstr ""
 msgid "No admin user found"
 msgstr ""
 
-#: handlers/installhandler.php:1446
+#: handlers/installhandler.php:1442
 msgid "Site Maintenance"
 msgstr ""
 
-#: handlers/installhandler.php:1447
+#: handlers/installhandler.php:1443
 msgid "Habari is currently being upgraded."
 msgstr ""
 
-#: handlers/installhandler.php:1448
+#: handlers/installhandler.php:1444
 msgid "Try again in a little while."
 msgstr ""
 
-#: handlers/installhandler.php:1461
+#: handlers/installhandler.php:1457
 msgid "Truncate the log table"
 msgstr ""
 
-#: handlers/installhandler.php:1848 handlers/installhandler.php:1919
+#: handlers/installhandler.php:1735
+msgid "Permissions to other users' unpublished posts"
+msgstr ""
+
+#: handlers/installhandler.php:1844 handlers/installhandler.php:1915
 msgid "The database host field was left empty."
 msgstr ""
 
-#: handlers/installhandler.php:1854 handlers/installhandler.php:1925
+#: handlers/installhandler.php:1850 handlers/installhandler.php:1921
 msgid "The database name field was left empty."
 msgstr ""
 
-#: handlers/installhandler.php:1860 handlers/installhandler.php:1931
+#: handlers/installhandler.php:1856 handlers/installhandler.php:1927
 msgid "The database user field was left empty."
 msgstr ""
 
-#: handlers/installhandler.php:1991
+#: handlers/installhandler.php:1987
 msgid "The database file was left empty."
 msgstr ""
 
-#: handlers/adminoptionshandler.php:33
+#: handlers/adminoptionshandler.php:36
 msgid "Name & Tagline"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:35 installer/db_setup.php:173
+#: handlers/adminoptionshandler.php:38 installer/db_setup.php:173
 msgid "Site Name"
 msgstr "Назва сайту"
 
-#: handlers/adminoptionshandler.php:40
+#: handlers/adminoptionshandler.php:43
 msgid "Site Tagline"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:45
+#: handlers/adminoptionshandler.php:48
 msgid "About"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:53
+#: handlers/adminoptionshandler.php:56
 msgid "Items per Page"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:58
+#: handlers/adminoptionshandler.php:61
 msgid "Entries to show in Atom feed"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:63
+#: handlers/adminoptionshandler.php:66
 msgid "Require Comment Author Email"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:68
+#: handlers/adminoptionshandler.php:71
 msgid "Comment SPAM Threshold"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:70
+#: handlers/adminoptionshandler.php:73
 msgid "The likelihood a comment is considered SPAM, in percent."
 msgstr ""
 
-#: handlers/adminoptionshandler.php:74
+#: handlers/adminoptionshandler.php:77
 msgid "Time & Date"
 msgstr "Час та дата"
 
-#: handlers/adminoptionshandler.php:84
+#: handlers/adminoptionshandler.php:79
 msgid "Time Zone"
 msgstr "Часовий пояс"
 
-#: handlers/adminoptionshandler.php:87
+#: handlers/adminoptionshandler.php:82
 #, php-format
 msgid "Current Date Time: %s"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:92
+#: handlers/adminoptionshandler.php:87
 #, php-format
 msgid "Current Date: %s"
 msgstr "Поточна дата: %s"
 
-#: handlers/adminoptionshandler.php:97
+#: handlers/adminoptionshandler.php:92
 #, php-format
 msgid "Current Time: %s"
 msgstr "Поточний час: %s"
 
-#: handlers/adminoptionshandler.php:101 installer/locale_dropdown.php:10
+#: handlers/adminoptionshandler.php:96 installer/locale_dropdown.php:10
 msgid "Language"
 msgstr "Мова"
 
-#: handlers/adminoptionshandler.php:103 installer/locale_dropdown.php:6
+#: handlers/adminoptionshandler.php:98 installer/locale_dropdown.php:6
 msgid "Locale"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:106
+#: handlers/adminoptionshandler.php:101
 msgid ""
 "International language code : This value is set in your config.php file, and"
 " cannot be changed here."
 msgstr ""
 
-#: handlers/adminoptionshandler.php:106
+#: handlers/adminoptionshandler.php:101
 msgid "International language code"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:113
+#: handlers/adminoptionshandler.php:108
 msgid "The appropriate locale code for your server"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:117
+#: handlers/adminoptionshandler.php:112
 msgid "Troubleshooting"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:119
+#: handlers/adminoptionshandler.php:114
 msgid "Minimum Severity"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:122
+#: handlers/adminoptionshandler.php:117
 msgid "Only log entries with a this or higher severity."
 msgstr ""
 
-#: handlers/adminoptionshandler.php:125
+#: handlers/adminoptionshandler.php:120
 msgid "Log Backtraces"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:127
+#: handlers/adminoptionshandler.php:122
 msgid ""
 "Logs error backtraces to the log table's data column. Can drastically "
 "increase log size!"
 msgstr ""
 
-#: handlers/adminoptionshandler.php:198
+#: handlers/adminoptionshandler.php:190
 msgid "Successfully updated options"
 msgstr ""
 
@@ -3284,123 +3380,134 @@ msgstr ""
 msgid "+"
 msgstr ""
 
-#: handlers/admindashboardhandler.php:103
+#: handlers/admindashboardhandler.php:101
 msgid "Modules updated."
 msgstr ""
 
-#: handlers/admindashboardhandler.php:114
+#: handlers/admindashboardhandler.php:112
 #, php-format
 msgid "Added module %s."
 msgstr ""
 
-#: handlers/admindashboardhandler.php:121
+#: handlers/admindashboardhandler.php:119
 msgid "Removed module."
 msgstr ""
 
-#: handlers/admindashboardhandler.php:132
+#: handlers/admindashboardhandler.php:131
 msgid "Module Configuration Saved."
 msgstr ""
 
-#: handlers/adminlogshandler.php:148 handlers/adminlogshandler.php:162
-#: handlers/adminlogshandler.php:174 handlers/adminlogshandler.php:187
-msgid "Any"
-msgstr ""
-
-#: handlers/adminlogshandler.php:253
-msgid "No logs selected."
-msgstr ""
-
-#: handlers/adminlogshandler.php:265
+#: handlers/adminlogshandler.php:154
 #, php-format
 msgid "Deleted %d logs."
 msgstr ""
 
-#: handlers/admincommentshandler.php:59
+#: handlers/adminlogshandler.php:157
+msgid "Purge Logs"
+msgstr ""
+
+#: handlers/adminlogshandler.php:162
+msgid "There was a problem purging the event logs."
+msgstr ""
+
+#: handlers/adminlogshandler.php:178 handlers/adminlogshandler.php:192
+#: handlers/adminlogshandler.php:204 handlers/adminlogshandler.php:217
+msgid "Any"
+msgstr ""
+
+#: handlers/admincommentshandler.php:45 themes/mzingi/commentform.php:29
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: handlers/admincommentshandler.php:51
 msgid "Author"
 msgstr ""
 
-#: handlers/admincommentshandler.php:61
+#: handlers/admincommentshandler.php:53
 msgid "Author Name"
 msgstr ""
 
-#: handlers/admincommentshandler.php:64
+#: handlers/admincommentshandler.php:54
 msgid "Author Email"
 msgstr ""
 
-#: handlers/admincommentshandler.php:67
+#: handlers/admincommentshandler.php:55
 msgid "Author URL"
 msgstr ""
 
-#: handlers/admincommentshandler.php:70
+#: handlers/admincommentshandler.php:56
 msgid "IP Address:"
 msgstr ""
 
-#: handlers/admincommentshandler.php:77
+#: handlers/admincommentshandler.php:62
 msgid "Date:"
 msgstr ""
 
-#: handlers/admincommentshandler.php:82
+#: handlers/admincommentshandler.php:63
 msgid "Post ID:"
 msgstr ""
 
-#: handlers/admincommentshandler.php:87
+#: handlers/admincommentshandler.php:67
 msgid "Status"
 msgstr ""
 
-#: handlers/admincommentshandler.php:279 handlers/admincommentshandler.php:280
-#: handlers/admincommentshandler.php:568
+#: handlers/admincommentshandler.php:259 handlers/admincommentshandler.php:260
+#: handlers/admincommentshandler.php:548
 msgid "Deleted all spam comments"
 msgstr ""
 
-#: handlers/admincommentshandler.php:286 handlers/admincommentshandler.php:287
-#: handlers/admincommentshandler.php:572
+#: handlers/admincommentshandler.php:266 handlers/admincommentshandler.php:267
+#: handlers/admincommentshandler.php:552
 msgid "Deleted all unapproved comments"
 msgstr ""
 
-#: handlers/admincommentshandler.php:321 handlers/admincommentshandler.php:335
+#: handlers/admincommentshandler.php:301 handlers/admincommentshandler.php:315
 #, php-format
 msgid "Deleted %d comments"
 msgstr ""
 
-#: handlers/admincommentshandler.php:322 handlers/admincommentshandler.php:342
+#: handlers/admincommentshandler.php:302 handlers/admincommentshandler.php:322
 #, php-format
 msgid "Marked %d comments as spam"
 msgstr ""
 
-#: handlers/admincommentshandler.php:323 handlers/admincommentshandler.php:350
+#: handlers/admincommentshandler.php:303 handlers/admincommentshandler.php:330
 #, php-format
 msgid "Approved %d comments"
 msgstr ""
 
-#: handlers/admincommentshandler.php:324 handlers/admincommentshandler.php:361
+#: handlers/admincommentshandler.php:304 handlers/admincommentshandler.php:341
 #, php-format
 msgid "Unapproved %d comments"
 msgstr ""
 
-#: handlers/admincommentshandler.php:325 handlers/admincommentshandler.php:384
+#: handlers/admincommentshandler.php:305 handlers/admincommentshandler.php:364
 #, php-format
 msgid "Edited %d comments"
 msgstr ""
 
-#: handlers/admincommentshandler.php:352
+#: handlers/admincommentshandler.php:332
 #, php-format
 msgid "Approved comments on these posts: %s"
 msgstr ""
 
-#: handlers/admincommentshandler.php:455
+#: handlers/admincommentshandler.php:435
 #, php-format
 msgid "Change this comment's status to %s"
 msgstr ""
 
-#: handlers/admincommentshandler.php:459
+#: handlers/admincommentshandler.php:439
 msgid "Delete this comment"
 msgstr ""
 
-#: handlers/admincommentshandler.php:460
+#: handlers/admincommentshandler.php:440
 msgid "Edit this comment"
 msgstr ""
 
-#: handlers/admincommentshandler.php:460 themes/mzingi/tag.php:25
+#: handlers/admincommentshandler.php:440 themes/mzingi/tag.php:25
 #: themes/mzingi/search.php:25 themes/mzingi/entry.multiple.php:23
 #: themes/mzingi/page.single.php:18 themes/mzingi/entry.single.php:30
 #: themes/mzingi/home.php:25 themes/charcoal/page.single.php:23
@@ -3409,16 +3516,16 @@ msgstr ""
 msgid "Edit"
 msgstr "Редагувати"
 
-#: handlers/admincommentshandler.php:556
+#: handlers/admincommentshandler.php:536
 msgid "No comments selected."
 msgstr ""
 
-#: handlers/admincommentshandler.php:563 handlers/adminpostshandler.php:475
+#: handlers/admincommentshandler.php:543 handlers/adminpostshandler.php:475
 #, php-format
 msgid "Unknown action \"%s\""
 msgstr ""
 
-#: handlers/admincommentshandler.php:577
+#: handlers/admincommentshandler.php:557
 #, php-format
 msgid "Deleted %d comment"
 msgid_plural "Deleted %d comments"
@@ -3426,7 +3533,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: handlers/admincommentshandler.php:582
+#: handlers/admincommentshandler.php:562
 #, php-format
 msgid "Marked %d comment as spam"
 msgid_plural "Marked %d comments as spam"
@@ -3434,7 +3541,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: handlers/admincommentshandler.php:588
+#: handlers/admincommentshandler.php:568
 #, php-format
 msgid "Approved %d comment"
 msgid_plural "Approved %d comments"
@@ -3442,7 +3549,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: handlers/admincommentshandler.php:594
+#: handlers/admincommentshandler.php:574
 #, php-format
 msgid "Unapproved %d comment"
 msgid_plural "Unapproved %d comments"
@@ -3474,16 +3581,11 @@ msgid ""
 "password reset link will be emailed to that user."
 msgstr ""
 
-#: handlers/userhandler.php:155 installer/db_setup.php:65
-#: installer/db_setup.php:112 installer/db_setup.php:193 admin/users.php:35
-msgid "Password"
-msgstr "Пароль"
-
-#: handlers/userhandler.php:159 handlers/userhandler.php:160
+#: handlers/userhandler.php:156 handlers/userhandler.php:158
 msgid "Reset password"
 msgstr "Змінити пароль"
 
-#: handlers/userhandler.php:201
+#: handlers/userhandler.php:198
 #, php-format
 msgid ""
 "Your password for %1$s has been reset.  Your credentials are as follows---\n"
@@ -3491,20 +3593,20 @@ msgid ""
 "Password: %3$s"
 msgstr ""
 
-#: handlers/userhandler.php:203
+#: handlers/userhandler.php:200
 #, php-format
 msgid "[%1$s] Password has been reset for %2$s"
 msgstr ""
 
-#: handlers/userhandler.php:204
+#: handlers/userhandler.php:201
 msgid "A new password has been sent to the user."
 msgstr ""
 
-#: handlers/userhandler.php:207
+#: handlers/userhandler.php:204
 msgid "There was a problem resetting the password.  It was not reset."
 msgstr ""
 
-#: handlers/userhandler.php:215
+#: handlers/userhandler.php:212
 msgid "The supplied password reset token has expired or is invalid."
 msgstr ""
 
@@ -3523,58 +3625,75 @@ msgstr ""
 msgid "Previewing theme '%s'"
 msgstr ""
 
-#: handlers/adminthemeshandler.php:136
+#: handlers/adminthemeshandler.php:138
 msgid "Saved block configuration."
 msgstr ""
 
-#: handlers/adminthemeshandler.php:146 handlers/adminthemeshandler.php:149
+#: handlers/adminthemeshandler.php:147
 msgid "Block Display Settings"
 msgstr ""
 
-#: handlers/adminthemeshandler.php:152
+#: handlers/adminthemeshandler.php:159
 msgid "Block Title:"
 msgstr ""
 
-#: handlers/adminthemeshandler.php:155
+#: handlers/adminthemeshandler.php:160
 msgid "Display Block Title:"
 msgstr ""
 
-#: handlers/adminthemeshandler.php:210
+#: handlers/adminthemeshandler.php:207
 msgid "A new block must first have a name."
 msgstr ""
 
-#: handlers/adminthemeshandler.php:225
+#: handlers/adminthemeshandler.php:222
 #, php-format
 msgid "Added new block \"%1s\" of type \"%2s\"."
 msgstr ""
 
-#: handlers/adminthemeshandler.php:248
+#: handlers/adminthemeshandler.php:245
 #, php-format
 msgid "Deleted block \"%1s\" of type \"%2s\"."
 msgstr ""
 
-#: handlers/adminthemeshandler.php:251
+#: handlers/adminthemeshandler.php:248
 #, php-format
 msgid "Failed to delete block \"%1s\" of type \"%2s\"."
 msgstr ""
 
-#: handlers/adminthemeshandler.php:305
+#: handlers/adminthemeshandler.php:307
 msgid "Saved block areas settings."
 msgstr ""
 
-#: handlers/adminthemeshandler.php:371
+#: handlers/adminthemeshandler.php:373
 #, php-format
 msgid ""
 "This data is for a block of type \"%s\", which is no longer provided by a "
 "theme or plugin."
 msgstr ""
 
-#: handlers/adminimporthandler.php:44
+#: handlers/adminimporthandler.php:40
 msgid ""
 "Plugins that conflict with importing are active. To prevent undesirable "
 "consequences, please de-activate the following plugins until the import is "
 "finished: "
 msgstr ""
+
+#: handlers/adminimporthandler.php:99
+msgid "You do not currently have any import plugins installed."
+msgstr "Допоки не встановлено жодного плагіну для імпортування"
+
+#: handlers/adminimporthandler.php:100
+#, php-format
+msgid "Please <a href=\"%1$s\">activate an import plugin</a> to enable importing."
+msgstr "Будь-ласка <a href=\"%1$s\">активуйте імпорт-плагін</a> для імпортування."
+
+#: handlers/adminimporthandler.php:103
+msgid "Please choose the type of import to perform:"
+msgstr "Щоб виконати, оберіть вид імпортування"
+
+#: handlers/adminimporthandler.php:106
+msgid "Select"
+msgstr "Вибрати"
 
 #: handlers/adminpluginshandler.php:42 handlers/adminpluginshandler.php:82
 msgid "Deactivate"
@@ -3582,18 +3701,16 @@ msgstr ""
 
 #: handlers/adminpluginshandler.php:132 installer/db_setup.php:14
 #: installer/db_setup.php:169 installer/db_setup.php:223
-#: installer/db_setup.php:251 admin/themes.php:23 admin/themes.php:25
+#: installer/db_setup.php:251 admin/themes.php:24 admin/themes.php:26
 msgid "Help"
 msgstr ""
 
 #: handlers/adminpluginshandler.php:224
-#, php-format
-msgid "Activated plugin '%s'"
+msgid "Activated plugin '@plugin'"
 msgstr ""
 
 #: handlers/adminpluginshandler.php:233
-#, php-format
-msgid "Deactivated plugin '%s'"
+msgid "Deactivated plugin '@plugin'"
 msgstr ""
 
 #: handlers/adminpostshandler.php:50
@@ -3726,27 +3843,15 @@ msgstr ""
 msgid "Posts tagged with %s and not with %s"
 msgstr ""
 
-#: themes/mzingi/theme.php:89
+#: themes/mzingi/theme.php:92
 msgid "About You"
 msgstr "Про мене"
 
-#: themes/mzingi/theme.php:95 admin/block_instances.php:8
-msgid "Name:"
-msgstr "Назва:"
-
-#: themes/mzingi/theme.php:95 themes/mzingi/theme.php:99
-msgid "Required"
-msgstr ""
-
-#: themes/mzingi/theme.php:99
-msgid "Email Address:"
-msgstr "Email адреса:"
-
-#: themes/mzingi/theme.php:102
+#: themes/mzingi/theme.php:104
 msgid "Web Address:"
 msgstr ""
 
-#: themes/mzingi/theme.php:104
+#: themes/mzingi/theme.php:106
 msgid "<p><em><small>Email address is not published</small></em></p>"
 msgstr ""
 
@@ -3859,7 +3964,7 @@ msgstr ""
 msgid "Admin"
 msgstr "Адмін"
 
-#: themes/charcoal/theme.php:31 themes/charcoal/theme.php:243
+#: themes/charcoal/theme.php:31 themes/charcoal/theme.php:234
 msgid "Charcoal Menu"
 msgstr ""
 
@@ -3868,99 +3973,99 @@ msgid "Added Charcoal Menu block to Nav area."
 msgstr ""
 
 #: themes/charcoal/theme.php:48
+msgid "Check to show the title image, uncheck to display the title text."
+msgstr ""
+
+#: themes/charcoal/theme.php:48
 msgid "Show Title Image:"
 msgstr ""
 
 #: themes/charcoal/theme.php:49
-msgid "Check to show the title image, uncheck to display the title text."
-msgstr ""
-
-#: themes/charcoal/theme.php:50
-msgid "Home label:"
-msgstr ""
-
-#: themes/charcoal/theme.php:51
 msgid "Set to whatever you want your first tab text to be."
 msgstr ""
 
-#: themes/charcoal/theme.php:52
-msgid "Show Entry Paperclip:"
+#: themes/charcoal/theme.php:49
+msgid "Home label:"
 msgstr ""
 
-#: themes/charcoal/theme.php:53
+#: themes/charcoal/theme.php:50
 msgid "Check to show the paperclip graphic in posts, uncheck to hide it."
 msgstr ""
 
-#: themes/charcoal/theme.php:54
-msgid "Show Page Paperclip:"
+#: themes/charcoal/theme.php:50
+msgid "Show Entry Paperclip:"
 msgstr ""
 
-#: themes/charcoal/theme.php:55
+#: themes/charcoal/theme.php:51
 msgid "Check to show the paperclip graphic in pages, uncheck to hide it."
 msgstr ""
 
-#: themes/charcoal/theme.php:56
-msgid "Show Powered By:"
+#: themes/charcoal/theme.php:51
+msgid "Show Page Paperclip:"
 msgstr ""
 
-#: themes/charcoal/theme.php:57
+#: themes/charcoal/theme.php:52
 msgid ""
 "Check to show the \"powered by Habari\" graphic in the sidebar, uncheck to "
 "hide it."
 msgstr ""
 
-#: themes/charcoal/theme.php:58
-msgid "Display Login:"
+#: themes/charcoal/theme.php:52
+msgid "Show Powered By:"
 msgstr ""
 
-#: themes/charcoal/theme.php:59
+#: themes/charcoal/theme.php:53
 msgid ""
 "Check to show the Login/Logout link in the navigation bar, uncheck to hide "
 "it."
 msgstr ""
 
-#: themes/charcoal/theme.php:60
-msgid "Tags in Multiple Posts Page:"
+#: themes/charcoal/theme.php:53
+msgid "Display Login:"
 msgstr ""
 
-#: themes/charcoal/theme.php:61
+#: themes/charcoal/theme.php:54
 msgid ""
 "Check to show the post tags in the multiple posts pages (search, tags, "
 "archives), uncheck to hide them."
 msgstr ""
 
-#: themes/charcoal/theme.php:62
-msgid "Show Post Navigation:"
+#: themes/charcoal/theme.php:54
+msgid "Tags in Multiple Posts Page:"
 msgstr ""
 
-#: themes/charcoal/theme.php:63
+#: themes/charcoal/theme.php:55
 msgid "Set to true to show single post navigation links, false to hide them."
 msgstr ""
 
-#: themes/charcoal/theme.php:64
-msgid "Tag Cloud Count:"
+#: themes/charcoal/theme.php:55
+msgid "Show Post Navigation:"
 msgstr ""
 
-#: themes/charcoal/theme.php:65
+#: themes/charcoal/theme.php:56
 msgid "Set to the number of tags to display on the default \"cloud\"."
 msgstr ""
 
-#: themes/charcoal/theme.php:133
+#: themes/charcoal/theme.php:56
+msgid "Tag Cloud Count:"
+msgstr ""
+
+#: themes/charcoal/theme.php:124
 #, php-format
 msgid "Displaying posts tagged: %s"
 msgstr ""
 
-#: themes/charcoal/theme.php:136
+#: themes/charcoal/theme.php:127
 #, php-format
 msgid "Displaying posts not tagged: %s"
 msgstr ""
 
-#: themes/charcoal/theme.php:139
+#: themes/charcoal/theme.php:130
 #, php-format
 msgid "Displaying posts tagged: %s and not %s"
 msgstr ""
 
-#: themes/charcoal/theme.php:161
+#: themes/charcoal/theme.php:152
 #, php-format
 msgid "%1$d Comment"
 msgid_plural "%1$d Comments"
@@ -3968,42 +4073,42 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: themes/charcoal/theme.php:174
+#: themes/charcoal/theme.php:165
 msgid "Search for "
 msgstr ""
 
-#: themes/charcoal/theme.php:179 themes/charcoal/theme.php:185
+#: themes/charcoal/theme.php:170 themes/charcoal/theme.php:176
 #, php-format
 msgid "Search results for '%s'"
 msgstr "Пошук результатів для '%s'"
 
-#: themes/charcoal/theme.php:182 themes/charcoal/theme.php:188
+#: themes/charcoal/theme.php:173 themes/charcoal/theme.php:179
 #, php-format
 msgid "No results found for your search '%s'"
 msgstr ""
 
-#: themes/charcoal/theme.php:182
+#: themes/charcoal/theme.php:173
 #, php-format
 msgid "You can try searching for '%s'"
 msgstr ""
 
-#: themes/charcoal/theme.php:228
+#: themes/charcoal/theme.php:219
 msgid "(Required)"
 msgstr ""
 
-#: themes/charcoal/theme.php:230
+#: themes/charcoal/theme.php:221
 msgid "Mail"
 msgstr "Пошта"
 
-#: themes/charcoal/theme.php:230
+#: themes/charcoal/theme.php:221
 msgid "(will not be published"
 msgstr ""
 
-#: themes/charcoal/theme.php:230
+#: themes/charcoal/theme.php:221
 msgid "- Required)"
 msgstr ""
 
-#: themes/charcoal/theme.php:255
+#: themes/charcoal/theme.php:246
 msgid "Blog"
 msgstr ""
 
@@ -4126,11 +4231,6 @@ msgid ""
 "connect.  If MySQL is running on your web server, and most of the time it "
 "is, \"localhost\" is usually a good value for this field."
 msgstr ""
-
-#: installer/db_setup.php:54 installer/db_setup.php:101
-#: installer/db_setup.php:183 admin/users.php:29
-msgid "Username"
-msgstr "Ім'я користувача"
 
 #: installer/db_setup.php:59
 msgid ""
@@ -4260,7 +4360,7 @@ msgstr ""
 msgid "Plugin Activation"
 msgstr ""
 
-#: installer/db_setup.php:258 admin/plugin.php:19
+#: installer/db_setup.php:258 admin/plugin.php:16
 #, php-format
 msgid ""
 "The plugin file %s is a legacy plugin, and does not include an XML info "
@@ -4475,6 +4575,18 @@ msgstr ""
 msgid "Mailing List"
 msgstr ""
 
+#: controls/formcontroltextmulti.php:26
+msgid "Remove item"
+msgstr ""
+
+#: controls/formcontroltextmulti.php:26
+msgid "remove"
+msgstr "видалити"
+
+#: controls/formcontroltextmulti.php:30
+msgid "Remove this item?"
+msgstr ""
+
 #: index.php:109
 msgid "Habari General Error"
 msgstr ""
@@ -4484,8 +4596,7 @@ msgid "An error occurred"
 msgstr ""
 
 #: index.php:112
-#, php-format
-msgid "Unable to connect to database.  Error message: %s"
+msgid "Unable to connect to database.  Error message: @error"
 msgstr ""
 
 #: index.php:113
@@ -4495,6 +4606,10 @@ msgstr ""
 #: admin/block_instances.php:3
 msgid "New Block Type:"
 msgstr ""
+
+#: admin/block_instances.php:8
+msgid "Name:"
+msgstr "Назва:"
 
 #: admin/block_instances.php:17
 #, php-format
@@ -4510,11 +4625,11 @@ msgstr ""
 msgid "All plugins"
 msgstr "Всі плагіни"
 
-#: admin/plugins.php:13 admin/plugins.php:54
+#: admin/plugins.php:13 admin/plugins.php:43
 msgid "Active Plugins"
 msgstr "Ввімкнути плагіни"
 
-#: admin/plugins.php:16 admin/plugins.php:69
+#: admin/plugins.php:16 admin/plugins.php:56
 msgid "Inactive Plugins"
 msgstr "Вимкнути плагіни"
 
@@ -4527,7 +4642,7 @@ msgstr "або"
 msgid "search plugins"
 msgstr "Знайти плагіни"
 
-#: admin/plugins.php:86
+#: admin/plugins.php:73
 msgid "Upload Plugin Package"
 msgstr "Завантажити пакунок плагіна"
 
@@ -4564,8 +4679,12 @@ msgstr ""
 msgid "Login to %s"
 msgstr ""
 
-#: admin/login.php:26 admin/header.php:73
+#: admin/login.php:39 admin/header.php:74
 msgid "Go to Site"
+msgstr ""
+
+#: admin/login.php:41 admin/footer.php:5
+msgid "Go to the Habari site"
 msgstr ""
 
 #: admin/groups.php:9 admin/group.php:9
@@ -4580,13 +4699,9 @@ msgstr "налаштування пошуку"
 msgid "Group Management"
 msgstr "Управління групою"
 
-#: admin/groups.php:46 admin/groups.php:63
+#: admin/groups.php:46
 msgid "Add Group"
 msgstr "Додати групу"
-
-#: admin/groups.php:50
-msgid "Group Name"
-msgstr "Назва групи"
 
 #: admin/sysinfo.php:25 admin/sysinfo.php:26
 msgid "Site Information"
@@ -4617,106 +4732,64 @@ msgstr "Повний список користувачів"
 msgid "search users"
 msgstr "пошук користувачів"
 
-#: admin/users.php:32
-msgid "E-Mail"
-msgstr "E-mail"
-
-#: admin/users.php:38
-msgid "Password Again"
-msgstr "Пароль ще раз"
-
-#: admin/users.php:41
-msgid "Add User"
-msgstr "Додати користувача"
-
-#: admin/users.php:52 admin/logs.php:18 admin/logs.php:81
-#: admin/comments.php:17 admin/comments.php:41 admin/tags.php:23
-#: admin/posts.php:16 admin/posts.php:42 admin/js/admin.js:322
-msgid "None selected"
-msgstr "Нічого не вибрано"
-
-#: admin/users.php:60
-#, php-format
-msgid "Reassign posts to %s"
-msgstr "Перевизначити запис на %s"
-
-#: admin/users.php:61 admin/logs.php:22 admin/logs.php:85
-#: admin/comments.php:20 admin/comments.php:44 admin/tags.php:32
-#: admin/posts.php:20 admin/posts.php:46
-msgid "Delete Selected"
-msgstr "Видалити вибране"
+#: admin/dashboard_modules.php:5
+msgid "Add Item"
+msgstr ""
 
 #: admin/import.php:7
 msgid "Conflicting Plugins"
 msgstr ""
 
-#: admin/import.php:22
-msgid "You do not currently have any import plugins installed."
-msgstr "Допоки не встановлено жодного плагіну для імпортування"
-
-#: admin/import.php:23
-#, php-format
-msgid "Please <a href=\"%1$s\">activate an import plugin</a> to enable importing."
-msgstr "Будь-ласка <a href=\"%1$s\">активуйте імпорт-плагін</a> для імпортування."
-
-#: admin/import.php:28
-msgid "Please choose the type of import to perform:"
-msgstr "Щоб виконати, оберіть вид імпортування"
-
-#: admin/import.php:38
-msgid "Select"
-msgstr "Вибрати"
-
-#: admin/logs.php:23 admin/logs.php:86
-msgid "Purge Logs"
-msgstr ""
-
-#: admin/logs.php:38
+#: admin/logs.php:16
 msgid "Date &amp; Time"
 msgstr ""
 
-#: admin/logs.php:40
+#: admin/logs.php:17
+msgid "User"
+msgstr "Користувач"
+
+#: admin/logs.php:18
 msgid "IP"
 msgstr "IP"
 
-#: admin/logs.php:41
+#: admin/logs.php:19
 msgid "Module"
 msgstr "Модуль"
 
-#: admin/logs.php:42
+#: admin/logs.php:20
 msgid "Type"
 msgstr "Тип"
 
-#: admin/logs.php:43
+#: admin/logs.php:21
 msgid "Severity"
 msgstr ""
 
-#: admin/logs.php:44
+#: admin/logs.php:22
 msgid "Message"
 msgstr "Повідомлення"
 
-#: admin/logs.php:56
+#: admin/logs.php:32
 msgid "Filter"
 msgstr "Фільтр"
 
-#: admin/logs.php:70
+#: admin/logs.php:47
 msgid "There are no logs to be displayed at this time."
 msgstr ""
 
-#: admin/dashboard.php:11
+#: admin/dashboard.php:10
 msgid ""
 "Oh, great! You're using IE6! I've finally found someone I can pawn this old "
 "betamax player off on!"
 msgstr ""
 
-#: admin/dashboard.php:12
+#: admin/dashboard.php:11
 #, php-format
 msgid ""
 "If you're reading this you're surfing using Internet Explorer 6, a browser "
 "that is %d %s old and cannot cope with the demands of the modern internet."
 msgstr ""
 
-#: admin/dashboard.php:13
+#: admin/dashboard.php:12
 msgid ""
 "Consider switching to <a href=\"http://mozilla.com\">Mozilla Firefox</a>, <a"
 " href=\"http://www.apple.com/safari/download/\">Safari</a>, <a "
@@ -4725,12 +4798,12 @@ msgid ""
 "explorer/default.aspx\">Internet Explorer</a>."
 msgstr ""
 
-#: admin/dashboard.php:21
+#: admin/dashboard.php:20
 #, php-format
 msgid "%s has been active for %s"
 msgstr ""
 
-#: admin/dashboard.php:30
+#: admin/dashboard.php:28
 #, php-format
 msgid "%d post"
 msgid_plural "%d posts"
@@ -4738,7 +4811,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:43
+#: admin/dashboard.php:41
 #, php-format
 msgid "%d comment"
 msgid_plural "%d comments"
@@ -4746,7 +4819,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:52
+#: admin/dashboard.php:50
 #, php-format
 msgid "%d tag"
 msgid_plural "%d tags"
@@ -4754,7 +4827,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:59
+#: admin/dashboard.php:57
 #, php-format
 msgid "[You] have published %1$s%2$s"
 msgid_plural "The [%3$d authors] have published %1$s%2$s"
@@ -4762,11 +4835,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:61
+#: admin/dashboard.php:59
 msgid " with "
 msgstr ""
 
-#: admin/dashboard.php:81
+#: admin/dashboard.php:79
 #, php-format
 msgid "%d draft"
 msgid_plural "%d drafts"
@@ -4774,7 +4847,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:92
+#: admin/dashboard.php:90
 #, php-format
 msgid "%d scheduled post"
 msgid_plural "%d scheduled posts"
@@ -4782,7 +4855,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:105
+#: admin/dashboard.php:103
 #, php-format
 msgid "%d comment awaiting approval"
 msgid_plural "%d comments awaiting approval"
@@ -4790,7 +4863,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:112
+#: admin/dashboard.php:110
 #, php-format
 msgid "%d spam comment"
 msgid_plural "%d spam comments"
@@ -4798,27 +4871,27 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: admin/dashboard.php:118
+#: admin/dashboard.php:116
 #, php-format
 msgid "You have %s"
 msgstr ""
 
-#: admin/dashboard.php:138
+#: admin/dashboard.php:136
 #, php-format
 msgid "%1$s update released on %2$s: %3$s"
 msgstr ""
 
-#: admin/dashboard.php:141
+#: admin/dashboard.php:139
 #, php-format
 msgid "%1$s update: %3$s"
 msgstr ""
 
-#: admin/dashboard.php:161
+#: admin/dashboard.php:159
 #, php-format
 msgid "%1$s <a href=\"%2$s\">%3$s</a> has the following updates available: %4$s"
 msgstr ""
 
-#: admin/dashboard.php:181
+#: admin/dashboard.php:179
 msgid ""
 "Welcome to Habari! We hope that you will jump right in and start exploring. "
 "If you get stuck or want to learn more about some of the advanced features, "
@@ -4827,11 +4900,11 @@ msgid ""
 "area."
 msgstr ""
 
-#: admin/dashboard.php:182
+#: admin/dashboard.php:180
 msgid "Habari Manual"
 msgstr ""
 
-#: admin/dashboard.php:188
+#: admin/dashboard.php:186
 msgid "This message will disappear next time you visit."
 msgstr ""
 
@@ -4871,49 +4944,45 @@ msgstr ""
 msgid "Token Description"
 msgstr ""
 
-#: admin/group.php:105
-msgid "allow"
-msgstr "дозволити"
-
-#: admin/group.php:106
-msgid "deny"
-msgstr "відхилити"
-
-#: admin/plugin.php:7
+#: admin/plugin.php:6
 #, php-format
 msgid "The plugin file %s had syntax errors and could not load."
 msgstr "Файл модуля %s містить синтаксні помилки і не може завантажитись."
 
-#: admin/plugin.php:10
+#: admin/plugin.php:9
 msgid "Show Error"
 msgstr "Відобразити помилку"
 
-#: admin/plugin.php:27
+#: admin/plugin.php:22
 #, php-format
 msgid ""
 "The XML file for the plugin %s contained errors and could not be loaded."
 msgstr ""
 
-#: admin/plugin.php:63
+#: admin/plugin.php:42
+msgid "core"
+msgstr ""
+
+#: admin/plugin.php:57
 msgid "v1.1 Update Available Now"
 msgstr "v1.1 Оновлення вже доступно"
 
-#: admin/plugin.php:77
+#: admin/plugin.php:71
 #, php-format
 msgid "This plugin requires the %1$s feature and cannot be activated."
 msgstr ""
 
-#: admin/plugin.php:87
+#: admin/plugin.php:81
 #, php-format
 msgid "%1$s will be activated to provide %2$s."
 msgstr ""
 
-#: admin/plugin.php:92
+#: admin/plugin.php:86
 #, php-format
 msgid "One of these plugins must be activated to provide %s:"
 msgstr ""
 
-#: admin/plugin.php:125
+#: admin/plugin.php:119
 msgid "Close"
 msgstr "Закрити"
 
@@ -5000,6 +5069,11 @@ msgstr "Всі опції"
 msgid "No published posts."
 msgstr "Опублікованих дописів нема"
 
+#: admin/comments.php:17 admin/comments.php:41 admin/tags.php:23
+#: admin/posts.php:16 admin/posts.php:42 admin/js/admin.js:326
+msgid "None selected"
+msgstr "Нічого не вибрано"
+
 #: admin/comments.php:20 admin/comments.php:44
 msgid "Delete selected comments"
 msgstr "Видалити вибрані коментарі"
@@ -5065,10 +5139,6 @@ msgstr "Фільтр за результатами для '%s'"
 msgid "Newer"
 msgstr "Новіший"
 
-#: admin/footer.php:5
-msgid "Go to the Habari site"
-msgstr ""
-
 #: admin/footer.php:10
 msgid "Logged in as"
 msgstr "Ви увійшли як"
@@ -5132,45 +5202,45 @@ msgstr "Коментарів, які відповідають параметра
 msgid "Current Theme"
 msgstr "Поточна тема"
 
-#: admin/themes.php:39
+#: admin/themes.php:40
 msgid "v"
 msgstr ""
 
-#: admin/themes.php:39
+#: admin/themes.php:40
 msgid "Update Available"
 msgstr "Оновлення доступно"
 
-#: admin/themes.php:50 admin/themes.php:136
+#: admin/themes.php:52 admin/themes.php:157
 #, php-format
 msgid "%1$s is licensed under the %2$s"
 msgstr ""
 
-#: admin/themes.php:73
+#: admin/themes.php:76
 msgid "General"
 msgstr ""
 
-#: admin/themes.php:81
+#: admin/themes.php:85
 msgid "Areas"
 msgstr ""
 
-#: admin/themes.php:113
+#: admin/themes.php:115
 msgid "Available Themes"
 msgstr "Доступні теми"
 
-#: admin/themes.php:142
+#: admin/themes.php:135
 msgid "Legacy theme."
 msgstr "Тема Legacy."
 
-#: admin/themes.php:144
+#: admin/themes.php:137
 #, php-format
 msgid "This theme requires the parent theme named \"%s\"."
 msgstr ""
 
-#: admin/themes.php:148
+#: admin/themes.php:141
 msgid "End Preview"
 msgstr "Кінець перегляду"
 
-#: admin/themes.php:150
+#: admin/themes.php:143
 msgid "Preview"
 msgstr "Перегляд"
 
@@ -5209,10 +5279,6 @@ msgstr ""
 #: admin/tags.php:158
 msgid "Merge"
 msgstr "З'єднання"
-
-#: admin/formcontrols/formcontrol_textmulti.php:38
-msgid "add"
-msgstr "додати"
 
 #: admin/db_profiling.php:41
 msgid "DB Profiling"
@@ -5273,29 +5339,29 @@ msgstr ""
 msgid "Uh Oh. An error has occurred. Please try again later."
 msgstr ""
 
-#: admin/js/admin.js:327
+#: admin/js/admin.js:331
 #, perl-format
 msgid ""
 "All %1$s visible selected (<a href=\"#all\" class=\"everything\">Select all "
 "%2$s</a>)"
 msgstr ""
 
-#: admin/js/admin.js:339
+#: admin/js/admin.js:343
 #, perl-format
 msgid "All %s selected"
 msgstr ""
 
-#: admin/js/admin.js:345
+#: admin/js/admin.js:349
 #, perl-format
 msgid "%s selected"
 msgstr ""
 
-#: admin/js/admin.js:348
+#: admin/js/admin.js:352
 #, perl-format
 msgid "%1$s selected (%2$s visible)"
 msgstr ""
 
-#: admin/js/admin.js:564
+#: admin/js/admin.js:568
 msgid ""
 "You did not save the changes you made. \\nLeaving this page will result in "
 "the lose of data."
